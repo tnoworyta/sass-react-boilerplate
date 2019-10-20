@@ -1,0 +1,34 @@
+.intro
+  margin: $m-lg * 2
+  &__tagline
+    display: flex
+    justify-content: center
+
+    &--highlight
+      border:
+        bottom: 1px solid white
+    &--normal
+      border:
+        bottom: 1px solid rgba($color-white, 0.5)
+      flex: 0 1 75%
+    &--cal
+      flex: 0 1 15%
+      display: flex
+    &--day
+      flex: 0 1 33%
+      margin:
+        left: 5px
+      border:
+        bottom: 1px solid white
+    &--day-split
+      flex: 0 1 33%
+      display: flex
+      justify-content: center
+    &--day-color1
+      flex: 0 1 80%
+      border:
+        bottom: 1px solid $color-violet
+    &--day-color2
+      flex: 0 1 20%
+      border:
+        bottom: 1px solid green
