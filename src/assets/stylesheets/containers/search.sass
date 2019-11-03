@@ -1,0 +1,38 @@
+.search
+  margin:
+    top: $m-xxl * 3
+    left: $m-lg * 2
+    right: $m-lg * 2
+  display: flex
+
+  &__icon
+    background-color: rgba($color-white, 0.5)
+    padding: $m-lg
+    img
+      max-height: $m-xl
+
+  &__flights
+    background-color: $color-white
+    flex: 1 0 auto
+    color: $color-black
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    &--item-caption
+      color: $color-gray
+      font-size: $font-size-sm
+      margin-bottom: $m-sm
+
+    &--item-airport
+      font-weight: bold
+      font-size: $font-size-base
+
+  &__btn
+    background-color: $color-violet
+    padding:
+      top: $m-xl
+      bottom: $m-xl
+      left:  $m-xxl * 2
+      right:  $m-xxl * 2
+    font-weight: bold
