@@ -12,8 +12,11 @@ function App() {
           <a href="c" className="navbar__menu-item btn">
             Check in
           </a>
-          <a href="c" className="navbar__menu-item">
+          <a href="c" className="navbar__menu-item navbar__menu-avatar">
             <img src="/av.jpg" alt="avatar" />
+          </a>
+          <a href="c" className="navbar__menu-item">
+            <img src="/h.jpg" alt="menu" />
           </a>
         </nav>
       </header>
@@ -29,6 +32,32 @@ function App() {
             <div className="intro__tagline--day"></div>
             <div className="intro__tagline--day"></div>
           </div>
+        </div>
+        <div className="intro__tagline-header">
+          <div className="intro__tagline-header--normal">Bangkok</div>
+          <div className="intro__tagline-header--cal">
+            <div className="intro__tagline-header--day-split">
+              <div className="intro__tagline-header--day-number">01</div>
+              <div className="intro__tagline-header--day-dot-split"></div>
+            </div>
+            <div className="intro__tagline-header--day">
+              <div className="intro__tagline-header--day-number">02</div>
+              <div className="intro__tagline-header--day-dot"></div>
+            </div>
+            <div className="intro__tagline-header--day">
+              <div className="intro__tagline-header--day-number">03</div>
+              <div className="intro__tagline-header--day-dot"></div>
+            </div>
+          </div>
+        </div>
+        <div className="intro__caption">A new door to paradise for just 1500 USD</div>
+        <div className="intro__subcaption">
+          <div>Book now till 25 Oct 2019</div>
+          <div className="intro__subcaption--last-line">Travel from 25 Oct 2019 to 25 Dec 2019</div>
+        </div>
+        <div className="intro__search-btn">
+          <div className="intro__search-btn--caption">Let's Go</div>
+          <div className="intro__search-btn--icon">&rarr;</div>
         </div>
       </div>
     </div>
