@@ -1,0 +1,63 @@
+.experience
+  margin:
+    left: $m-xxl * 2
+    right: $m-xxl * 2
+  display: flex
+  justify-content: space-arond
+
+  &__caption
+    flex: 1 0
+    margin-right: $m-base
+
+    &--line
+      padding-top: $m-sm
+      background-color: $color-violet
+      border-radius: $m-sm
+      max-width: $m-xxl
+
+    &--header
+      font-size: $font-size-xl
+
+    &--subheader
+      font-size: $font-size-lg
+      color: $color-gray
+
+    &--link
+      border:
+        top: $m-xs/3 solid $color-gray
+      font-size: $font-size-lg
+      color: $color-gray
+
+  &__classes
+    flex: 1 1 70%
+    margin-right: $m-base
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+
+    &--card
+      background-color: $color-white
+      max-width: 80%
+
+      &:last-child
+        margin-top: $m-xl
+        align-self: flex-end
+
+    &--card-subcaption
+      color: $color-gray
+      font-size: $font-size-sm
+      padding: $m-sm
+      margin: $m-sm
+      text-transform: uppercase
+      border-bottom: $m-xs/4 solid $color-gray
+      display: inline-block
+
+    &--card-caption
+      font-weight: bold
+      font-size: $font-size-lg
+      padding:
+        left: $m-sm
+        bottom: $m-sm
+
+  &__vr
+    flex: 1 1 50%

@@ -77,6 +77,40 @@ function App() {
         </div>
         <div className="search__btn">Search</div>
       </div>
+
+      <div className="pages">
+        <div className="pages__transition"></div>
+        <div className="pages__content">
+          <div className="experience">
+            <div className="experience__caption">
+              <div className="experience__caption--line"></div>
+              <div className="experience__caption--header">
+                <h1>The Zabdos experience</h1>
+              </div>
+              <div className="experience__caption--subheader">
+                Wheter it's your first flight or simply latest, we work to anticipate your every
+                need
+              </div>
+              <div className="experience__caption--link">Watch the full video now!</div>
+            </div>
+            <div className="experience__classes">
+              <div className="experience__classes--card">
+                <img src="/inside1.jpg" alt="inside" />
+                <div className="experience__classes--card-subcaption">Arrive inspired</div>
+                <div className="experience__classes--card-caption">Business Class</div>
+              </div>
+              <div className="experience__classes--card">
+                <img src="/inside2.jpg" alt="inside" />
+                <div className="experience__classes--card-subcaption">Expect the exceptional</div>
+                <div className="experience__classes--card-caption">Economy Class</div>
+              </div>
+            </div>
+            <div className="experience__vr">
+              <img src="/vr.jpg" alt="vr" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
