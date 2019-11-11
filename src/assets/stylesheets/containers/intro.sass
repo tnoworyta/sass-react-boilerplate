@@ -1,102 +1,87 @@
 .intro
   margin: $m-xxl * 2
 
-  &__tagline
+.slider
+  border:
+    top: $m-xs/2 solid rgba($color-white, 0.5)
+  display: flex
+  justify-content: space-between
+
+  &__header
+    border:
+      bottom: $m-xs/2 solid $color-white
+    text-transform: uppercase
+    padding-bottom: $m-xs
+    line-height: $line-height-xl
+    display: inline-block
+    position: absolute
+    top: 132px
+
+  &__buttons
+    flex: 0 1 15%
     display: flex
     justify-content: center
+    position: relative
+    top: -3px
 
-    &--highlight
-      border:
-        bottom: $m-xs/2 solid white
-      text-transform: uppercase
-      padding-bottom: $m-xs
-      line-height: $line-height-xl
-    &--normal
-      border:
-        bottom: $m-xs/2 solid rgba($color-white, 0.5)
-      flex: 1 0 auto
-    &--cal
-      flex: 0 1 15%
-      display: flex
-    &--day
-      flex: 0 1 33%
-      margin:
-        left: $m-xs
-      border:
-        bottom: $m-xs/2 solid rgba($color-white, 0.5)
-    &--day-split
-      flex: 0 1 33%
-      display: flex
-      justify-content: center
-    &--day-color1
-      flex: 0 1 60%
-      border:
-        bottom: $m-xs/2 solid $color-violet
-    &--day-color2
-      flex: 0 1 40%
-      border:
-        bottom: $m-xs/2 solid $color-blue
-
-  &__tagline-header
+  &__button
+    flex: 0 1 33%
+    margin:
+      left: $m-xs
+    border:
+      top: $m-xs/2 solid rgba($color-white, 0.5)
+    background-color: rgba($color-white, 0.4)
+    color: rgba($color-white, 0.5)
+    font-weight: bold
+    margin:
+      left: $m-xs
     display: flex
     justify-content: center
+    flex-direction: column
+    align-items: center
+    max-height: 30%
 
-    &--normal
-      flex: 1 0 auto
-      font-size: $font-size-xxl*2
-      font-weight: bold
-      line-height: $line-height-sm
-    &--cal
-      flex: 0 1 15%
-      display: flex
-
-    &--day
-      background-color: rgba($color-white, 0.4)
-      flex: 0 1 33%
-      color: rgba($color-white, 0.5)
-      font-weight: bold
-      margin:
-        left: $m-xs
-      display: flex
-      justify-content: center
-      flex-direction: column
-      align-items: center
-      max-height: 80%
-    &--day-split
+    &--active
+      @extend .slider__button
       background-color: rgba($color-white, 0.7)
-      color: $color-black
-      font-weight: bold
-      flex: 0 1 33%
-      text-align: center
-      display: flex
-      justify-content: center
-      flex-direction: column
-      align-items: center
-      max-height: 80%
-    &--day-dot-split
+      border:
+        top: $m-xs/2 solid $color-blue
+
+  &__button-caption
+    padding:
+      top: $m-lg
+      bottom: $m-lg
+
+    &--active
+      @extend .slider__button-caption
+      color: black
+
+  &__button-icon
+    background-color: rgba($color-white, 0.4)
+    min-width: $m-sm
+    min-height: $m-sm
+    border-radius: 50%
+
+    &--active
       background-color: $color-violet
       min-width: $m-sm
       min-height: $m-sm
       border-radius: 50%;
       -webkit-box-shadow: 0px $m-sm $m-sm $m-xs/1.5 $color-violet
-    &--day-dot
-      background-color: rgba($color-white, 0.4)
-      min-width: $m-sm
-      min-height: $m-sm
-      border-radius: 50%;
-    &--day-number
-      padding:
-        top: $m-lg
-        bottom: $m-lg
 
-  &__caption
+
+.advert
+  &__header
+    font-size: $font-size-xxl*2
+    font-weight: bold
+    line-height: $line-height-sm
+  &__subheader
     color: $color-white
     font-weight: bold
     font-size: $font-size-xl
     margin:
       top: $m-xl
-
-  &__subcaption
+  &__details
     font-size: $font-size-lg
     margin:
       top: $m-xl
@@ -108,26 +93,24 @@
     div:last-child
       margin:
         top: $m-md
-
-  &__search-btn
+  &__btn
     margin:
       top: $m-xxl
     display: flex
 
-    &--caption
-      padding:
-        top: $m-md
-        bottom: $m-md
-        left: $m-xl
-        right: $m-xl
-      text-align: center
-      background-color: rgba($color-white, 0.4)
-      font-weight: bold
-      font-size: $font-size-base
+  &__btn-caption
+    padding:
+      top: $m-md
+      bottom: $m-md
+      left: $m-xl
+      right: $m-xl
+    text-align: center
+    background-color: rgba($color-white, 0.4)
+    font-weight: bold
+    font-size: $font-size-base
 
-    &--icon
-      padding: $m-md
-      color: $color-violet
-      background-color: $color-white
-      font-size: $font-size-lg
-
+  &__btn-icon
+    padding: $m-md
+    color: $color-violet
+    background-color: $color-white
+    font-size: $font-size-lg

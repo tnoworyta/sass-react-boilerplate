@@ -6,10 +6,10 @@ function App() {
       <header className="navbar__header">
         <strong>Zabdos</strong>
         <nav className="navbar__menu">
-          <a href="f" className="navbar__menu-item">
+          <a href="f" className="navbar__item">
             Flight Statuses
           </a>
-          <a href="c" className="navbar__menu-item btn">
+          <a href="c" className="navbar__menu-item navbar__menu-btn">
             Check in
           </a>
           <a href="c" className="navbar__menu-item navbar__menu-avatar">
@@ -21,43 +21,34 @@ function App() {
         </nav>
       </header>
       <div className="intro">
-        <div className="intro__tagline">
-          <div className="intro__tagline--highlight">Fly with us to</div>
-          <div className="intro__tagline--normal"></div>
-          <div className="intro__tagline--cal">
-            <div className="intro__tagline--day-split">
-              <div className="intro__tagline--day-color1"></div>
-              <div className="intro__tagline--day-color2"></div>
+        <div className="slider">
+          <div className="slider__header">Fly with us to</div>
+          <div className="slider__slideframe">
+            <div className="advert__header">Bangkok</div>
+            <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
+            <div className="advert__details">
+              <div>Book now till 25 Oct 2019</div>
+              <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
             </div>
-            <div className="intro__tagline--day"></div>
-            <div className="intro__tagline--day"></div>
-          </div>
-        </div>
-        <div className="intro__tagline-header">
-          <div className="intro__tagline-header--normal">Bangkok</div>
-          <div className="intro__tagline-header--cal">
-            <div className="intro__tagline-header--day-split">
-              <div className="intro__tagline-header--day-number">01</div>
-              <div className="intro__tagline-header--day-dot-split"></div>
-            </div>
-            <div className="intro__tagline-header--day">
-              <div className="intro__tagline-header--day-number">02</div>
-              <div className="intro__tagline-header--day-dot"></div>
-            </div>
-            <div className="intro__tagline-header--day">
-              <div className="intro__tagline-header--day-number">03</div>
-              <div className="intro__tagline-header--day-dot"></div>
+            <div className="advert__btn">
+              <div className="advert__btn-caption">Let's Go</div>
+              <div className="advert__btn-icon">&rarr;</div>
             </div>
           </div>
-        </div>
-        <div className="intro__caption">A new door to paradise for just 1500 USD</div>
-        <div className="intro__subcaption">
-          <div>Book now till 25 Oct 2019</div>
-          <div className="intro__subcaption--last-line">Travel from 25 Oct 2019 to 25 Dec 2019</div>
-        </div>
-        <div className="intro__search-btn">
-          <div className="intro__search-btn--caption">Let's Go</div>
-          <div className="intro__search-btn--icon">&rarr;</div>
+          <div className="slider__buttons">
+            <div className="slider__button--active">
+              <div className="slider__button-caption--active">01</div>
+              <div className="slider__button-icon--active"></div>
+            </div>
+            <div className="slider__button">
+              <div className="slider__button-caption">02</div>
+              <div className="slider__button-icon"></div>
+            </div>
+            <div className="slider__button">
+              <div className="slider__button-caption">03</div>
+              <div className="slider__button-icon"></div>
+            </div>
+          </div>
         </div>
       </div>
 
