@@ -108,6 +108,55 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="journey">
+            <hr className="journey__divider" />
+            <div className="journey__header">
+              <h1>Complement Your Journey</h1>
+            </div>
+            <div className="journey__subheader">
+              Explore the additional services we offer to make your
+            </div>
+            <div className="journey__subheader">journey even more memorable</div>
+            <div className="gallery">
+              <div className="gallery__image">
+                <div className="gallery__thumb--active">
+                  <img src="/plane.png" alt="icon" />
+                </div>
+                <div className="gallery__thumb-caption">Manage booking</div>
+              </div>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <img src="/plane.png" alt="icon" />
+                </div>
+                <div className="gallery__thumb-caption">Excess bagage</div>
+              </div>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <img src="/plane.png" alt="icon" />
+                </div>
+                <div className="gallery__thumb-caption">Paid lounge access</div>
+              </div>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <img src="/plane.png" alt="icon" />
+                </div>
+                <div className="gallery__thumb-caption">Oryx Airport Hotel</div>
+              </div>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <img src="/plane.png" alt="icon" />
+                </div>
+                <div className="gallery__thumb-caption">Al Maha Services</div>
+              </div>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <img src="/plane.png" alt="icon" />
+                </div>
+                <div className="gallery__thumb-caption">Car rentals</div>
+              </div>
+            </div>
+            <hr className="journey__divider" />
+          </div>
         </div>
       </div>
     </div>
