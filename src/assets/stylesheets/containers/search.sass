@@ -11,22 +11,13 @@
     img
       max-height: $m-xl
 
-  &__flights
+  &__filters
     background-color: $color-white
     flex: 1 0 auto
     color: $color-black
     display: flex
     justify-content: space-around
     align-items: center
-
-    &--item-caption
-      color: $color-gray
-      font-size: $font-size-sm
-      margin-bottom: $m-sm
-
-    &--item-airport
-      font-weight: bold
-      font-size: $font-size-base
 
   &__btn
     background-color: $color-violet
@@ -36,3 +27,14 @@
       left:  $m-xxl * 2
       right:  $m-xxl * 2
     font-weight: bold
+
+
+.filter
+  &__item-caption
+    color: $color-gray
+    font-size: $font-size-sm
+    margin-bottom: $m-sm
+
+  &__item-value
+    font-weight: bold
+    font-size: $font-size-base

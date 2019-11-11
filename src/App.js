@@ -56,14 +56,14 @@ function App() {
         <div className="search__icon">
           <img src="/plane.png" alt="icon" />
         </div>
-        <div className="search__flights">
-          <div className="search__flights--item">
-            <div className="search__flights--item-caption">Departure airport</div>
-            <div className="search__flights--item-airport">Mumbai (BOM) &darr;</div>
+        <div className="search__filters">
+          <div className="filter__item">
+            <div className="filter__item-caption">Departure airport</div>
+            <div className="filter__item-value">Mumbai (BOM) &darr;</div>
           </div>
-          <div className="search__flights--item">
-            <div className="search__flights--item-caption">Arrival airport</div>
-            <div className="search__flights--item-airport">Aalborg (AAL) &darr;</div>
+          <div className="filter__item">
+            <div className="filter__item-caption">Arrival airport</div>
+            <div className="filter__item-value">Aalborg (AAL) &darr;</div>
           </div>
         </div>
         <div className="search__btn">Search</div>
