@@ -82,7 +82,7 @@ function App() {
                 Wheter it's your first flight or simply latest, we work to anticipate your every
                 need
               </div>
-              <hr className="divider" />
+              <hr className="text-divider" />
               <a href="c" className="experience__link">
                 <div className="experience__link-icon">&#9658;</div>
                 <div className="experience__link-caption">Watch the full video now!</div>

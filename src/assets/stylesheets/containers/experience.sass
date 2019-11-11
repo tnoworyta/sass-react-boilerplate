@@ -7,10 +7,7 @@
   align-items: flex-start
 
   &__divider
-    padding-top: $m-sm
-    background-color: $color-violet
-    border-radius: $m-sm
-    max-width: $m-xxl
+    @extend .divider
     margin:
       top: $m-xxl
       bottom: $m-xxl
@@ -24,15 +21,15 @@
 
 
   &__subheader
-    font-size: $font-size-lg * 1.3
-    color: $color-gray
+    font-size: $font-size-lg * 1.1
+    color: rgba($color-gray, 0.5)
     margin:
       top: $m-xxl
       bottom: $m-xxl
 
   &__link
-    font-size: $font-size-lg
-    color: $color-gray
+    font-size: $font-size-base * 1.1
+    color: rgba($color-gray, 0.5)
     display: flex
     align-items: center
     text-decoration: none
@@ -89,6 +86,13 @@
       left: $m-sm
       bottom: $m-sm
 
+.text-divider
+  background-color: rgba($color-gray, 0.1)
+  border: $m-xs/8 solid rgba($color-gray, 0.1)
+
 .divider
-  color: $color-gray
-  border: $m-xs/8 solid rgba($color-gray, 0.2)
+  background-color: $color-violet
+  border: $m-xs/8 solid $color-violet
+  border-radius: 7px 7px 7px 7px;
+  height: 8px;
+  width: 15%
