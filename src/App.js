@@ -5,17 +5,17 @@ function App() {
     <div className="home">
       <header className="navbar__header">
         <strong>Zabdos</strong>
-        <nav className="navbar__menu">
-          <a href="f" className="navbar__item">
+        <nav className="menu">
+          <a href="f" className="menu__item">
             Flight Statuses
           </a>
-          <a href="c" className="navbar__menu-item navbar__menu-btn">
+          <a href="c" className="menu__item menu__btn">
             Check in
           </a>
-          <a href="c" className="navbar__menu-item navbar__menu-avatar">
+          <a href="c" className="menu__item menu__avatar">
             <img src="/av.jpg" alt="avatar" />
           </a>
-          <a href="c" className="navbar__menu-item">
+          <a href="c" className="menu__item">
             <img src="/h.jpg" alt="menu" />
           </a>
         </nav>

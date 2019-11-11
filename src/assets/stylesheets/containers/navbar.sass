@@ -6,23 +6,23 @@
     margin: $m-lg
     font-size: $font-size-lg
 
-  &__menu
-    display: flex
-    justify-content: space-between
-    align-items: center
-    min-height: $m-base * 2
-    font-size: $font-size-base
-    &-item
-      margin:
-        left: $m-base
-      text-decoration: none
-      img
-        max-width: $m-base * 2
-    &-avatar
-      img
-        border-radius: 50%;
-    &-btn
-      @extend .btn
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  min-height: $m-base * 2
+  font-size: $font-size-base
+  &__item
+    margin:
+      left: $m-base
+    text-decoration: none
+    img
+      max-width: $m-base * 2
+  &__avatar
+    img
+      border-radius: 50%;
+  &__btn
+    @extend .btn
 
 
 +media-breakpoint-up(md)
