@@ -73,31 +73,39 @@ function App() {
         <div className="pages__transition"></div>
         <div className="pages__content">
           <div className="experience">
-            <div className="experience__caption">
-              <div className="experience__caption--line"></div>
-              <div className="experience__caption--header">
-                <h1>The Zabdos experience</h1>
+            <div className="experience__heading-section">
+              <div className="experience__divider"></div>
+              <div className="experience__header">
+                <h1>The Zabdos Experience</h1>
               </div>
-              <div className="experience__caption--subheader">
+              <div className="experience__subheader">
                 Wheter it's your first flight or simply latest, we work to anticipate your every
                 need
               </div>
-              <div className="experience__caption--link">Watch the full video now!</div>
+              <hr className="divider" />
+              <a href="c" className="experience__link">
+                <div className="experience__link-icon">&#9658;</div>
+                <div className="experience__link-caption">Watch the full video now!</div>
+              </a>
             </div>
             <div className="experience__classes">
-              <div className="experience__classes--card">
+              <div className="card">
                 <img src="/inside1.jpg" alt="inside" />
-                <div className="experience__classes--card-subcaption">Arrive inspired</div>
-                <div className="experience__classes--card-caption">Business Class</div>
+                <div className="card__subcaption">Arrive inspired</div>
+                <div className="card__caption">Business Class</div>
               </div>
-              <div className="experience__classes--card">
+              <div className="card">
                 <img src="/inside2.jpg" alt="inside" />
-                <div className="experience__classes--card-subcaption">Expect the exceptional</div>
-                <div className="experience__classes--card-caption">Economy Class</div>
+                <div className="card__subcaption">Expect the exceptional</div>
+                <div className="card__caption">Economy Class</div>
               </div>
             </div>
             <div className="experience__vr">
-              <img src="/vr.jpg" alt="vr" />
+              <div className="card--visible-on-top">
+                <img src="/vr.jpg" alt="vr" />
+                <div className="card__subcaption">Award winning technology</div>
+                <div className="card__caption">Explore the Fleet in VR</div>
+              </div>
             </div>
           </div>
         </div>
