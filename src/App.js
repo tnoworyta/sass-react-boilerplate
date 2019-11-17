@@ -3,7 +3,7 @@ import React from 'react'
 function App() {
   return (
     <div className="home">
-      <header className="navbar__header">
+      <header className="navbar">
         <strong>Zabdos</strong>
         <nav className="menu">
           <a href="f" className="menu__item">
@@ -24,15 +24,17 @@ function App() {
         <div className="slider">
           <div className="slider__header">Fly with us to</div>
           <div className="slider__slideframe">
-            <div className="advert__header">Bangkok</div>
-            <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
-            <div className="advert__details">
-              <div>Book now till 25 Oct 2019</div>
-              <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
-            </div>
-            <div className="advert__btn">
-              <div className="advert__btn-caption">Let's Go</div>
-              <div className="advert__btn-icon">&rarr;</div>
+            <div className="advert">
+              <div className="advert__header">Bangkok</div>
+              <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
+              <div className="advert__details">
+                <div>Book now till 25 Oct 2019</div>
+                <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
+              </div>
+              <div className="advert__btn">
+                <div className="advert__btn-caption">Let's Go</div>
+                <div className="advert__btn-icon">&rarr;</div>
+              </div>
             </div>
           </div>
           <div className="slider__buttons">
@@ -57,13 +59,13 @@ function App() {
           <img src="/plane.png" alt="icon" />
         </div>
         <div className="search__filters">
-          <div className="filter__item">
-            <div className="filter__item-caption">Departure airport</div>
-            <div className="filter__item-value">Mumbai (BOM) &darr;</div>
+          <div className="filter">
+            <div className="filter__caption">Departure airport</div>
+            <div className="filter__value">Mumbai (BOM) &darr;</div>
           </div>
-          <div className="filter__item">
-            <div className="filter__item-caption">Arrival airport</div>
-            <div className="filter__item-value">Aalborg (AAL) &darr;</div>
+          <div className="filter">
+            <div className="filter__caption">Arrival airport</div>
+            <div className="filter__value">Aalborg (AAL) &darr;</div>
           </div>
         </div>
         <div className="search__btn">Search</div>
@@ -72,23 +74,19 @@ function App() {
       <div className="pages">
         <div className="pages__transition"></div>
         <div className="pages__content">
-          <div className="experience">
-            <div className="experience__heading-section">
-              <div className="experience__divider"></div>
-              <div className="experience__header">
-                <h1>The Zabdos Experience</h1>
-              </div>
-              <div className="experience__subheader">
+          <div className="column-section">
+            <div className="column-section__column">
+              <h1 className="primary-header--branded">The Zabdos Experience</h1>
+              <div className="column-section__description">
                 Wheter it's your first flight or simply latest, we work to anticipate your every
                 need
               </div>
-              <hr className="text-divider" />
-              <a href="c" className="experience__link">
-                <div className="experience__link-icon">&#9658;</div>
-                <div className="experience__link-caption">Watch the full video now!</div>
+              <a href="c" className="column-section__link">
+                <div className="column-section__link-icon">&#9658;</div>
+                <div className="column-section__link-caption">Watch the full video now!</div>
               </a>
             </div>
-            <div className="experience__classes">
+            <div className="column-section__column">
               <div className="card">
                 <img src="/inside1.jpg" alt="inside" />
                 <div className="card__subcaption">Arrive inspired</div>
@@ -100,7 +98,7 @@ function App() {
                 <div className="card__caption">Economy Class</div>
               </div>
             </div>
-            <div className="experience__vr">
+            <div className="column-section__column">
               <div className="card--visible-on-top">
                 <img src="/vr.jpg" alt="vr" />
                 <div className="card__subcaption">Award winning technology</div>

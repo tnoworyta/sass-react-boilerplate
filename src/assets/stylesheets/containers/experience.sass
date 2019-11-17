@@ -1,4 +1,16 @@
-.experience
+.primary-header
+  font-size: $font-size-xl * 2
+  &--branded
+    @extend .primary-header
+    &::before
+      @extend .divider
+      content: ' '
+      display: block
+      margin:
+        top: $m-xl
+        bottom: $m-xl
+
+.column-section
   margin:
     left: $m-xxl * 2
     right: $m-xxl * 2
@@ -6,26 +18,24 @@
   justify-content: space-around
   align-items: flex-start
 
-  &__divider
-    @extend .divider
-    margin:
-      top: $m-xxl
-      bottom: $m-xxl
-
-  &__heading-section
+  &__column
     flex: 1 1 33%
-    margin-right: $m-lg
+    display: flex
+    justify-content: center
+    flex-direction: column
+    &:not(:last-child)
+      margin-right: $m-lg
 
-  &__header
-    font-size: $font-size-xl
-
-
-  &__subheader
+  &__description
     font-size: $font-size-lg * 1.1
     color: rgba($color-gray, 0.5)
+    padding:
+      bottom: $m-xl
     margin:
-      top: $m-xxl
-      bottom: $m-xxl
+      top: $m-md
+      bottom: $m-xl
+    border:
+      bottom: $m-xs/8 solid rgba($color-gray, 0.3)
 
   &__link
     font-size: $font-size-base * 1.1
@@ -33,8 +43,6 @@
     display: flex
     align-items: center
     text-decoration: none
-    margin:
-      top: $m-md
 
   &__link-icon
     background-color: $color-violet
@@ -46,16 +54,6 @@
     color: $color-white
     border-radius: 50%
     margin-right: $m-sm
-
-  &__classes
-    flex: 1 1 33%
-    margin-right: $m-lg
-    display: flex
-    justify-content: center
-    flex-direction: column
-
-  &__vr
-    flex: 1 1 33%
 
 .card
   background-color: $color-white
@@ -86,13 +84,9 @@
       left: $m-sm
       bottom: $m-sm
 
-.text-divider
-  background-color: rgba($color-gray, 0.1)
-  border: $m-xs/8 solid rgba($color-gray, 0.1)
-
 .divider
-  background-color: $color-violet
   border: $m-xs/8 solid $color-violet
   border-radius: 7px 7px 7px 7px;
-  height: 8px;
+  background-color: $color-violet
   width: 15%
+  height: $m-md / 2
