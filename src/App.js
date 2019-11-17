@@ -31,10 +31,9 @@ function App() {
                 <div>Book now till 25 Oct 2019</div>
                 <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
               </div>
-              <div className="advert__btn">
+              <a href="c" className="advert__btn">
                 <div className="advert__btn-caption">Let's Go</div>
-                <div className="advert__btn-icon">&rarr;</div>
-              </div>
+              </a>
             </div>
           </div>
           <div className="slider__buttons">
@@ -68,7 +67,7 @@ function App() {
             <div className="filter__value">Aalborg (AAL) &darr;</div>
           </div>
         </div>
-        <div className="search__btn">Search</div>
+        <button className="search__btn">Search</button>
       </div>
 
       <div className="pages">

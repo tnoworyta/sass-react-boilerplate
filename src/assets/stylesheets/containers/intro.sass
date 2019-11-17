@@ -105,6 +105,14 @@
     margin:
       top: $m-xxl
     display: flex
+    text-decoration: none
+    &::after
+      content: '→'
+      display: block
+      padding: $m-md
+      color: $color-violet
+      background-color: $color-white
+      font-size: $font-size-lg
 
   &__btn-caption
     padding:
@@ -116,9 +124,3 @@
     background-color: rgba($color-white, 0.4)
     font-weight: bold
     font-size: $font-size-base
-
-  &__btn-icon
-    padding: $m-md
-    color: $color-violet
-    background-color: $color-white
-    font-size: $font-size-lg
