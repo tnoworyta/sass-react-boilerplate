@@ -1,7 +1,16 @@
-.primary-header
+.heading
   font-size: $font-size-xl * 2
-  &--branded
-    @extend .primary-header
+
+  &--primary-branded
+    @extend .heading
+    &::before
+      @extend .divider
+      content: ' '
+      display: block
+      margin: 0 auto $m-xl auto
+
+  &--secondary-branded
+    @extend .heading
     &::before
       @extend .divider
       content: ' '
@@ -88,5 +97,5 @@
   border: $m-xs/8 solid $color-violet
   border-radius: 7px 7px 7px 7px;
   background-color: $color-violet
-  width: 15%
-  height: $m-md / 2
+  width: $m-xxl
+  height: $m-md / 1.9

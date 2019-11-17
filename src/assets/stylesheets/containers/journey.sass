@@ -1,4 +1,4 @@
-.journey
+.section
   margin:
     top: $m-xxl * 2
     left: $m-xxl * 2
@@ -8,25 +8,15 @@
   justify-content: center
   align-items: center
 
-  &__divider
-    @extend .divider
-    width: 5%
+  &__description
+    text-align: center
+    font-size: $font-size-lg * 1.1
+    color: rgba($color-gray, 0.5)
     margin:
       bottom: $m-xxl
 
-  &__header
-    font-size: $font-size-xl
-
-  &__subheader
-    font-size: $font-size-lg * 1.1
-    color: rgba($color-gray, 0.5)
-    &:last-child
-      margin:
-        bottom: $m-xxl
-
 .gallery
   margin:
-    top: $m-xxl * 2
     bottom: $m-xxl * 2
   display: flex
   flex-wrap: wrap

@@ -76,7 +76,7 @@ function App() {
         <div className="pages__content">
           <div className="column-section">
             <div className="column-section__column">
-              <h1 className="primary-header--branded">The Zabdos Experience</h1>
+              <h1 className="heading--secondary-branded">The Zabdos Experience</h1>
               <div className="column-section__description">
                 Wheter it's your first flight or simply latest, we work to anticipate your every
                 need
@@ -106,15 +106,14 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="journey">
-            <hr className="journey__divider" />
-            <div className="journey__header">
-              <h1>Complement Your Journey</h1>
-            </div>
-            <div className="journey__subheader">
+
+          <div className="section">
+            <h1 className="heading--primary-branded">Complement Your Journey</h1>
+            <div className="section__description">
               Explore the additional services we offer to make your
+              <br />
+              journey even more memorable
             </div>
-            <div className="journey__subheader">journey even more memorable</div>
             <div className="gallery">
               <div className="gallery__image">
                 <div className="gallery__thumb--active">
@@ -153,7 +152,6 @@ function App() {
                 <div className="gallery__thumb-caption">Car rentals</div>
               </div>
             </div>
-            <hr className="journey__divider" />
           </div>
         </div>
       </div>
