@@ -32,7 +32,7 @@ function App() {
                 <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
               </div>
               <a href="c" className="advert__btn">
-                <div className="advert__btn-caption">Let's Go</div>
+                Let's Go
               </a>
             </div>
           </div>
