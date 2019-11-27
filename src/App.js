@@ -80,10 +80,11 @@ function App() {
                 Wheter it's your first flight or simply latest, we work to anticipate your every
                 need
               </div>
-              <a href="c" className="column-section__link">
-                <div className="column-section__link-icon">&#9658;</div>
-                <div className="column-section__link-caption">Watch the full video now!</div>
-              </a>
+              <div className="column-section__links">
+                <a href="c" className="link-with-icon">
+                  Watch the full video now!
+                </a>
+              </div>
             </div>
             <div className="column-section__column">
               <div className="card">

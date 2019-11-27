@@ -46,24 +46,6 @@
     border:
       bottom: $m-xs/8 solid rgba($color-gray, 0.3)
 
-  &__link
-    font-size: $font-size-base * 1.1
-    color: rgba($color-gray, 0.5)
-    display: flex
-    align-items: center
-    text-decoration: none
-
-  &__link-icon
-    background-color: $color-violet
-    padding:
-      top: $m-sm
-      bottom: $m-sm
-      left: $m-md
-      right: $m-md
-    color: $color-white
-    border-radius: 50%
-    margin-right: $m-sm
-
 .card
   background-color: $color-white
   &--visible-on-top
@@ -99,3 +81,31 @@
   background-color: $color-violet
   width: $m-xxl
   height: $m-md / 1.9
+
+.link-with-icon
+  font-size: $font-size-base * 1.1
+  color: rgba($color-gray, 0.5)
+  display: inline-block
+  position: relative
+  text-decoration: none
+  padding:
+    top: $m-sm
+    bottom: $m-sm
+  left: $m-xxl + $m-sm
+  &::before
+    position: absolute
+    right: 100%
+    top: 0
+    content: '►'
+    display: block
+    color: $color-white
+    background-color: $color-violet
+    font-size: $font-size-lg
+    bottom: 0
+    border-radius: 50%
+    margin-right: $m-sm
+    padding:
+      top: $m-sm
+      bottom: $m-sm
+      left: $m-md
+      right: $m-md
