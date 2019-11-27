@@ -1,0 +1,41 @@
+.search
+  margin:
+    top: $m-xxl * 3
+    left: $m-xxl * 2
+    right: $m-xxl * 2
+  display: flex
+
+  &__icon
+    background-color: rgba($color-white, 0.5)
+    padding: $m-lg
+    img
+      max-height: $m-xl
+
+  &__filters
+    background-color: $color-white
+    flex: 1 0 auto
+    color: $color-black
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+  &__btn
+    background-color: $color-violet
+    border: 0
+    padding:
+      top: $m-xl
+      bottom: $m-xl
+      left:  $m-xxl * 2
+      right:  $m-xxl * 2
+    font-weight: bold
+
+
+.filter
+  &__caption
+    color: $color-gray
+    font-size: $font-size-sm
+    margin-bottom: $m-sm
+
+  &__value
+    font-weight: bold
+    font-size: $font-size-base
