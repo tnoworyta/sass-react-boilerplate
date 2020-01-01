@@ -1,22 +1,9 @@
-.navbar
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding: $m-lg
-  font-size: $font-size-lg
-
 .menu
-  display: flex
-  justify-content: space-between
   align-items: center
-  min-height: $m-base * 2
+  display: flex
   font-size: $font-size-base
-
-  &__item
-    margin-left: $m-base
-    text-decoration: none
-    img
-      max-width: $m-base * 2
+  justify-content: space-between
+  min-height: $m-base * 2
 
   &__avatar
     img
@@ -25,3 +12,15 @@
   &__btn
     @extend .btn
 
+  &__item
+    margin-left: $m-base
+    text-decoration: none
+    img
+      max-width: $m-base * 2
+
+.navbar
+  align-items: center
+  display: flex
+  font-size: $font-size-lg
+  justify-content: space-between
+  padding: $m-lg

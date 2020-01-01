@@ -1,41 +1,25 @@
-.section
-  margin:
-    top: $m-xxl * 2
-    left: $m-xxl * 2
-    right: $m-xxl * 2
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-
-  &__description
-    text-align: center
-    font-size: $font-size-xl
-    color: rgba($color-gray, 0.5)
-    margin-bottom: $m-xxl
-
 .gallery
-  margin-bottom: $m-xxl * 2
+  align-items: center
   display: flex
   flex-wrap: wrap
   justify-content: center
-  align-items: center
+  margin-bottom: $m-xxl * 2
 
   &__image
-    flex: 0 1 33%
-    display: flex
-    justify-content: center
     align-items: center
+    display: flex
     flex-direction: column
+    flex: 0 1 33%
+    justify-content: center
+    padding: $m-lg
     img
       max-width: 25px
-    padding: $m-lg
 
   &__thumb
     background-color: $color-white
-    padding: $m-lg
     border-radius: 50%
     box-shadow: 0 $m-base $m-base rgba($color-black, 0.2)
+    padding: $m-lg
 
     &--active
       @extend .gallery__thumb
@@ -44,3 +28,19 @@
 
   &__thumb-caption
     margin-top: $m-md
+
+.section
+  align-items: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin:
+    left: $m-xxl * 2
+    right: $m-xxl * 2
+    top: $m-xxl * 2
+
+  &__description
+    color: rgba($color-gray, 0.5)
+    font-size: $font-size-xl
+    margin-bottom: $m-xxl
+    text-align: center

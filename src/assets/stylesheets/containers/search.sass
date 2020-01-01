@@ -1,47 +1,47 @@
-.search
-  margin:
-    top: $m-xxl * 3
-    left: $m-xxl * 2
-    right: $m-xxl * 2
-  display: flex
-
-  &__icon
-    background-color: rgba($color-white, 0.5)
-    padding: $m-lg
-    img
-      max-height: $m-xl
-
-  &__filters
-    background-color: $color-white
-    flex: 1 0 auto
-    color: $color-black
-    display: flex
-    justify-content: space-around
-    align-items: center
-
-  &__btn
-    background-color: $brand-primary
-    border: 0
-    padding:
-      top: $m-xl
-      bottom: $m-xl
-      left:  $m-xxl * 2
-      right:  $m-xxl * 2
-    font-weight: $font-weight-bold
-
 .filter
   &__caption
     color: $color-gray
     font-size: $font-size-sm
     margin-bottom: $m-sm
 
-  &__value
-    display: flex
-    justify-content: center
-    align-items: center
-
   &__selected-value
     font:
-      weight: $font-weight-bold
       size: $font-size-base
+      weight: $font-weight-bold
     margin-right: $m-md
+
+  &__value
+    align-items: center
+    display: flex
+    justify-content: center
+
+.search
+  display: flex
+  margin:
+    left: $m-xxl * 2
+    right: $m-xxl * 2
+    top: $m-xxl * 3
+
+  &__btn
+    background-color: $brand-primary
+    border: 0
+    font-weight: $font-weight-bold
+    padding:
+      bottom: $m-xl
+      left:  $m-xxl * 2
+      right:  $m-xxl * 2
+      top: $m-xl
+
+  &__filters
+    align-items: center
+    background-color: $color-white
+    color: $color-black
+    display: flex
+    flex: 1 0 auto
+    justify-content: space-around
+
+  &__icon
+    background-color: rgba($color-white, 0.5)
+    padding: $m-lg
+    img
+      max-height: $m-xl
