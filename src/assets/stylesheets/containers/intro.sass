@@ -39,11 +39,11 @@
     &--active
       @extend .slider__button
       background-color: rgba($color-white, 0.7)
-      border-top: $m-xs/2 solid $color-blue
+      border-top: $m-xs/2 solid $brand-selected
 
       &::before
         content: ' '
-        background-color: $color-violet
+        background-color: $brand-primary
         width: 60%
         height: $m-xs/2
         position: relative
@@ -66,11 +66,11 @@
     border-radius: 50%
 
     &--active
-      background-color: $color-violet
+      background-color: $brand-primary
       min-width: $m-sm
       min-height: $m-sm
       border-radius: 50%
-      box-shadow: 0 $m-sm $m-sm $m-xs/1.5 $color-violet
+      box-shadow: 0 $m-sm $m-sm $m-xs/1.5 $brand-primary
 
 
 .advert
@@ -118,7 +118,7 @@
     top: 0
     display: block
     padding: $m-md
-    color: $color-violet
+    color: $brand-primary
     background-color: $color-white
     font-size: $font-size-lg
     bottom: 0
