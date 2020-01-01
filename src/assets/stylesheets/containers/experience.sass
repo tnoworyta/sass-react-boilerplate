@@ -51,7 +51,6 @@
   &--visible-on-top
     @extend .card
     position: relative
-    z-index: $z-higher
     box-shadow: -$m-lg $m-lg $m-xl rgba($brand-primary, 0.2)
 
   &:last-child:nth-child(n+2)
@@ -78,10 +77,10 @@
 
 .divider
   border: $m-xs/8 solid $brand-primary
-  border-radius: 7px 7px 7px 7px
+  border-radius: $border-radius-sm
   background-color: $brand-primary
   width: $m-xxl
-  height: $m-md / 1.9
+  height: $m-sm
 
 .link-with-icon
   font-size: $font-size-base * 1.1

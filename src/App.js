@@ -23,36 +23,34 @@ function App() {
           </a>
         </nav>
       </header>
-      <div className="intro">
-        <div className="slider">
-          <div className="slider__header">Fly with us to</div>
-          <div className="slider__slideframe">
-            <div className="advert">
-              <div className="advert__header">Bangkok</div>
-              <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
-              <div className="advert__details">
-                <div>Book now till 25 Oct 2019</div>
-                <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
-              </div>
-              <a href="c" className="advert__btn">
-                Let's Go
-                <div className="advert__icon"><Arrow className="brand-icon" /></div>
-              </a>
+      <div className="slider">
+        <div className="slider__header">Fly with us to</div>
+        <div className="slider__slideframe">
+          <div className="advert">
+            <div className="advert__header">Bangkok</div>
+            <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
+            <div className="advert__details">
+              <div>Book now till 25 Oct 2019</div>
+              <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
             </div>
+            <a href="c" className="advert__btn">
+              Let's Go
+              <div className="advert__icon"><Arrow className="brand-icon" /></div>
+            </a>
           </div>
-          <div className="slider__buttons">
-            <div className="slider__button--active">
-              <div className="slider__button-caption--active">01</div>
-              <div className="slider__button-icon--active"></div>
-            </div>
-            <div className="slider__button">
-              <div className="slider__button-caption">02</div>
-              <div className="slider__button-icon"></div>
-            </div>
-            <div className="slider__button">
-              <div className="slider__button-caption">03</div>
-              <div className="slider__button-icon"></div>
-            </div>
+        </div>
+        <div className="slider__buttons">
+          <div className="slider__button--active">
+            <div className="slider__button-caption--active">01</div>
+            <div className="slider__button-icon--active"></div>
+          </div>
+          <div className="slider__button">
+            <div className="slider__button-caption">02</div>
+            <div className="slider__button-icon"></div>
+          </div>
+          <div className="slider__button">
+            <div className="slider__button-caption">03</div>
+            <div className="slider__button-icon"></div>
           </div>
         </div>
       </div>
