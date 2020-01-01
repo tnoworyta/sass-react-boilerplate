@@ -41,18 +41,18 @@ function App() {
             </div>
           </div>
           <div className="slider__buttons">
-            <div className="slider__button--active">
+            <button className="slider__button--active">
               <div className="slider__button-caption--active">01</div>
               <div className="slider__button-icon--active"></div>
-            </div>
-            <div className="slider__button">
+            </button>
+            <button className="slider__button">
               <div className="slider__button-caption">02</div>
               <div className="slider__button-icon"></div>
-            </div>
-            <div className="slider__button">
+            </button>
+            <button className="slider__button">
               <div className="slider__button-caption">03</div>
               <div className="slider__button-icon"></div>
-            </div>
+            </button>
           </div>
         </div>
 
