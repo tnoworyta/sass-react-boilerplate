@@ -1,4 +1,7 @@
 import React from 'react'
+import { ReactComponent as Arrow } from './assets/images/icons/arrow.svg'
+import { ReactComponent as PlayButton } from './assets/images/icons/play.svg'
+import { ReactComponent as ArrowDown } from './assets/images/icons/arrow-down.svg'
 
 function App() {
   return (
@@ -33,6 +36,7 @@ function App() {
               </div>
               <a href="c" className="advert__btn">
                 Let's Go
+                <div className="advert__icon"><Arrow className="brand-icon" /></div>
               </a>
             </div>
           </div>
@@ -60,11 +64,17 @@ function App() {
         <div className="search__filters">
           <div className="filter">
             <div className="filter__caption">Departure airport</div>
-            <div className="filter__value">Mumbai (BOM) &darr;</div>
+            <div className="filter__value">
+              <div className="filter__selected-value">Mumbai (BOM)</div>
+              <ArrowDown />
+            </div>
           </div>
           <div className="filter">
             <div className="filter__caption">Arrival airport</div>
-            <div className="filter__value">Aalborg (AAL) &darr;</div>
+            <div className="filter__value">
+            <div className="filter__selected-value">Aalborg (AAL)</div>
+            <ArrowDown />
+          </div>
           </div>
         </div>
         <button className="search__btn">Search</button>
@@ -82,6 +92,7 @@ function App() {
               </div>
               <div className="column-section__links">
                 <a href="c" className="link-with-icon">
+                <div className="link-with-icon__icon"><PlayButton className="white-icon"/></div>
                   Watch the full video now!
                 </a>
               </div>
