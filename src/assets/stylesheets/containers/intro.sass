@@ -2,14 +2,12 @@
   margin: $m-xxl * 2
 
 .slider
-  border:
-    top: $m-xs/2 solid rgba($color-white, 0.5)
+  border-top: $m-xs/2 solid rgba($color-white, 0.5)
   display: flex
   justify-content: space-between
 
   &__header
-    border:
-      bottom: $m-xs/2 solid $color-white
+    border-bottom: $m-xs/2 solid $color-white
     text-transform: uppercase
     padding-bottom: $m-xs
     line-height: $line-height-xl
@@ -26,15 +24,12 @@
 
   &__button
     flex: 0 1 33%
-    margin:
-      left: $m-xs
-    border:
-      top: $m-xs/2 solid rgba($color-white, 0.5)
+    margin-left: $m-xs
+    border-top: $m-xs/2 solid rgba($color-white, 0.5)
     background-color: rgba($color-white, 0.4)
     color: rgba($color-white, 0.5)
-    font-weight: bold
-    margin:
-      left: $m-xs
+    font-weight: $font-weight-bold
+    margin-left: $m-xs
     display: flex
     justify-content: center
     flex-direction: column
@@ -44,8 +39,7 @@
     &--active
       @extend .slider__button
       background-color: rgba($color-white, 0.7)
-      border:
-        top: $m-xs/2 solid $color-blue
+      border-top: $m-xs/2 solid $color-blue
       &::before
         content: ' '
         background-color: $color-violet
@@ -80,27 +74,24 @@
 
 .advert
   &__header
-    font-size: $font-size-xxl*2
-    font-weight: bold
+    font:
+      size: $font-size-xxl
+      weight: $font-weight-bold
     line-height: $line-height-sm
   &__subheader
     color: $color-white
-    font-weight: bold
-    font-size: $font-size-xl
-    margin:
-      top: $m-xl
+    font:
+      weight: $font-weight-bold
+      size: $font-size-xl
+    margin-top: $m-xl
   &__details
     font-size: $font-size-lg
-    margin:
-      top: $m-xl
-    padding:
-      left: $m-md
-    border:
-      left: $m-xs/2 solid $color-white
+    margin-top: $m-xl
+    padding-left: $m-md
+    border-left: $m-xs/2 solid $color-white
 
     div:last-child
-      margin:
-        top: $m-md
+      margin-top: $m-md
   &__btn
     padding:
       top: $m-md
@@ -109,10 +100,10 @@
       right: $m-xl
     text-align: center
     background-color: rgba($color-white, 0.4)
-    font-weight: bold
-    font-size: $font-size-base
-    margin:
-      top: $m-xxl
+    font:
+      weight: $font-weight-bold
+      size: $font-size-base
+    margin-top: $m-xxl
     display: inline-block
     text-decoration: none
     position: relative

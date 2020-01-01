@@ -27,7 +27,7 @@
       bottom: $m-xl
       left:  $m-xxl * 2
       right:  $m-xxl * 2
-    font-weight: bold
+    font-weight: $font-weight-bold
 
 
 .filter
@@ -42,6 +42,7 @@
     align-items: center
 
   &__selected-value
-    font-weight: bold
-    font-size: $font-size-base
+    font:
+      weight: $font-weight-bold
+      size: $font-size-base
     margin-right: $m-md
