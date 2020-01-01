@@ -29,7 +29,6 @@
     background-color: rgba($color-white, 0.4)
     color: rgba($color-white, 0.5)
     font-weight: $font-weight-bold
-    margin-left: $m-xs
     display: flex
     justify-content: center
     flex-direction: column
@@ -57,18 +56,18 @@
 
     &--active
       @extend .slider__button-caption
-      color: black
+      color: $color-black
 
   &__button-icon
     background-color: rgba($color-white, 0.4)
-    min-width: $m-sm
-    min-height: $m-sm
+    width: $m-sm
+    height: $m-sm
     border-radius: 50%
 
     &--active
       background-color: $brand-primary
-      min-width: $m-sm
-      min-height: $m-sm
+      width: $m-sm
+      height: $m-sm
       border-radius: 50%
       box-shadow: 0 $m-sm $m-sm $m-xs/1.5 $brand-primary
 
