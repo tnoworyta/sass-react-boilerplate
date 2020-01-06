@@ -91,6 +91,16 @@
         top: -18px
         width: 60%
 
+      .slider__button-caption
+        color: black
+
+      .slider__button-icon
+        background-color: $brand-primary
+        border-radius: 50%
+        box-shadow: 0 $m-sm $m-sm $m-xs/1.5 $brand-primary
+        height: $m-sm
+        width: $m-sm
+
   &__buttons
     display: flex
     flex: 0 1 15%
@@ -103,22 +113,11 @@
       bottom: $m-lg
       top: $m-lg
 
-    &--active
-      @extend .slider__button-caption
-      color: $color-black
-
   &__button-icon
     background-color: rgba($color-white, 0.4)
     border-radius: 50%
     height: $m-sm
     width: $m-sm
-
-    &--active
-      background-color: $brand-primary
-      border-radius: 50%
-      box-shadow: 0 $m-sm $m-sm $m-xs/1.5 $brand-primary
-      height: $m-sm
-      width: $m-sm
 
   &__header
     border-bottom: $m-xs/2 solid $color-white

@@ -42,8 +42,8 @@ function App() {
           </div>
           <div className="slider__buttons">
             <button className="slider__button -active">
-              <div className="slider__button-caption--active">01</div>
-              <div className="slider__button-icon--active"></div>
+              <div className="slider__button-caption">01</div>
+              <div className="slider__button-icon"></div>
             </button>
             <button className="slider__button">
               <div className="slider__button-caption">02</div>
@@ -125,7 +125,7 @@ function App() {
           </div>
           <div className="gallery">
             <div className="gallery__image">
-              <div className="gallery__thumb--active">
+              <div className="gallery__thumb -active">
                 <img src="/plane.png" alt="icon" />
               </div>
               <div className="gallery__thumb-caption">Manage booking</div>
