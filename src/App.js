@@ -41,7 +41,7 @@ function App() {
             </div>
           </div>
           <div className="slider__buttons">
-            <button className="slider__button--active">
+            <button className="slider__button -active">
               <div className="slider__button-caption--active">01</div>
               <div className="slider__button-icon--active"></div>
             </button>
