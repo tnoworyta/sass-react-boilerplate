@@ -24,8 +24,8 @@ function App() {
             </a>
           </nav>
         </header>
+        <div className="slider__header">Fly with us to</div>
         <div className="slider">
-          <div className="slider__header">Fly with us to</div>
           <div className="slider__slideframe">
             <div className="advert">
               <div className="advert__header">Bangkok</div>

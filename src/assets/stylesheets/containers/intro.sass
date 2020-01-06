@@ -59,7 +59,11 @@
   border-top: $m-xs/2 solid rgba($color-white, 0.5)
   display: flex
   justify-content: space-between
-  margin: $m-xxl * 2
+  margin:
+    bottom: $m-xxl * 2
+    left: $m-xxl * 2
+    right: $m-xxl * 2
+    top: 0
 
   &__button
     align-items: center
@@ -123,7 +127,9 @@
     border-bottom: $m-xs/2 solid $color-white
     display: inline-block
     line-height: $line-height-xl
+    margin:
+      bottom: $m-xs/2 * -1
+      left: $m-xxl * 2
     padding-bottom: $m-xs
-    position: absolute
+    position: relative
     text-transform: uppercase
-    top: 163px
