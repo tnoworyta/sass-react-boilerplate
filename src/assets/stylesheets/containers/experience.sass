@@ -1,11 +1,6 @@
 .card
   background-color: $color-white
 
-  &--visible-on-top
-    @extend .card
-    box-shadow: -$m-lg $m-lg $m-xl rgba($brand-primary, 0.2)
-    position: relative
-
   &__caption
     font:
       size: $font-size-xl
@@ -23,24 +18,15 @@
     padding: $m-sm
     text-transform: uppercase
 
-  &:last-child:nth-child(n+2)
-    left: $m-xxl
-    margin-top: $m-xl
-    position: relative
-
 .column-section
-  align-items: flex-start
   display: flex
-  justify-content: space-around
+  flex-direction: column
 
   &__column
     display: flex
     flex-direction: column
     flex: 1 1 33%
     justify-content: center
-
-    &:not(:last-child)
-      margin-right: $m-lg
 
   &__description
     border-bottom: 1px solid rgba($color-gray, 0.3)
@@ -102,3 +88,26 @@
     position: absolute
     right: 100%
     top: 0
+
++media-breakpoint-up(lg)
+  .card
+
+    &.-visible-on-top
+      box-shadow: -$m-lg $m-lg $m-xl rgba($brand-primary, 0.2)
+      position: relative
+
+    &:last-child:nth-child(n+2)
+      left: $m-xxl
+      margin-top: $m-xl
+      position: relative
+
+  .column-section
+    align-items: flex-start
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+
+    &__column
+
+      &:not(:last-child)
+        margin-right: $m-lg

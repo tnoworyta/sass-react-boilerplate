@@ -122,7 +122,7 @@ function App() {
                   </div>
                 </div>
                 <div className="column-section__column">
-                  <div className="card--visible-on-top">
+                  <div className="card -visible-on-top">
                     <img src="/vr.jpg" alt="vr" />
                     <div className="card__subcaption">Award winning technology</div>
                     <div className="card__caption">Explore the Fleet in VR</div>
