@@ -22,7 +22,7 @@
 
   &__header
     font:
-      size: $font-size-xxl
+      size: $font-size-xxl / 2
       weight: $font-weight-bold
     line-height: $line-height-sm
 
@@ -44,10 +44,14 @@
       weight: $font-weight-bold
     margin-top: $m-xl
 
+.main-container
+  margin:
+    left: $m-lg
+    right: $m-lg
+
 .primary-content
   background-color: $color-black
   background-image: url('/b.jpg')
-  background-size: contain
   margin-bottom: $m-xl
   padding-bottom: $m-xl
 
@@ -59,11 +63,7 @@
   border-top: $m-xs/2 solid rgba($color-white, 0.5)
   display: flex
   justify-content: space-between
-  margin:
-    bottom: $m-xxl * 2
-    left: $m-xxl * 2
-    right: $m-xxl * 2
-    top: 0
+  margin-bottom: $m-xxl * 2
   position: relative
 
   &__button
@@ -107,11 +107,7 @@
         width: $m-sm
 
   &__buttons
-    display: flex
-    flex: 0 1 15%
-    justify-content: center
-    position: relative
-    top: -3px
+    display: none
 
   &__button-caption
     padding:
@@ -131,3 +127,28 @@
     line-height: $line-height-xl
     position: absolute
     text-transform: uppercase
+
++media-breakpoint-up(lg)
+  .advert
+    &__header
+      font-size: $font-size-xxl
+
+  .centered-container
+    margin: 0 auto
+    max-width: map-get($grid-breakpoints, xl)
+
+  .indented-container
+    margin:
+      left: $m-lg
+      right: $m-lg
+
+  .primary-content
+    background-size: contain
+
+  .slider
+    &__buttons
+      display: flex
+      flex: 0 1 15%
+      justify-content: center
+      position: relative
+      top: -3px

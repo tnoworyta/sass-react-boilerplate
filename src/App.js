@@ -7,76 +7,86 @@ function App() {
   return (
     <div>
       <div className="primary-content">
-        <header className="navbar">
-          <strong>Zabdos</strong>
-          <nav className="menu">
-            <a href="f" className="menu__item">
-              Flight Statuses
-            </a>
-            <a href="c" className="menu__item menu__btn">
-              Check in
-            </a>
-            <a href="c" className="menu__item menu__avatar">
-              <img src="/av.jpg" alt="avatar" />
-            </a>
-            <a href="c" className="menu__item">
-              <img src="/h.jpg" alt="menu" />
-            </a>
-          </nav>
-        </header>
-        <div className="slider">
-          <div className="slider__header">Fly with us to</div>
-          <div className="slider__slideframe">
-            <div className="advert">
-              <div className="advert__header">Bangkok</div>
-              <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
-              <div className="advert__details">
-                <div>Book now till 25 Oct 2019</div>
-                <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
-              </div>
-              <a href="c" className="advert__btn">
-                Let's Go
-                <div className="advert__icon"><Arrow className="brand-icon" /></div>
-              </a>
-            </div>
-          </div>
-          <div className="slider__buttons">
-            <button className="slider__button -active">
-              <div className="slider__button-caption">01</div>
-              <div className="slider__button-icon"></div>
-            </button>
-            <button className="slider__button">
-              <div className="slider__button-caption">02</div>
-              <div className="slider__button-icon"></div>
-            </button>
-            <button className="slider__button">
-              <div className="slider__button-caption">03</div>
-              <div className="slider__button-icon"></div>
-            </button>
-          </div>
-        </div>
+        <div className="centered-container">
+          <div className="main-container">
 
-        <div className="search">
-          <div className="search__icon">
-            <img src="/plane.png" alt="icon" />
-          </div>
-          <div className="search__filters">
-            <div className="filter">
-              <div className="filter__caption">Departure airport</div>
-              <div className="filter__value">
-                <div className="filter__selected-value">Mumbai (BOM)</div>
-                <ArrowDown />
+            <header className="navbar">
+              <strong>Zabdos</strong>
+              <nav className="menu">
+                  <div className="menu__items">
+                  <a href="f" className="menu__item">
+                    Flight Statuses
+                  </a>
+                  <a href="c" className="menu__item menu__btn">
+                    Check in
+                  </a>
+                  <a href="c" className="menu__item menu__avatar">
+                    <img src="/av.jpg" alt="avatar" />
+                  </a>
+                </div>
+                <a href="c" className="menu__item">
+                  <img src="/h.jpg" alt="menu" />
+                </a>
+              </nav>
+            </header>
+
+            <div className="indented-container">
+              <div className="slider">
+                <div className="slider__header">Fly with us to</div>
+                <div className="slider__slideframe">
+                  <div className="advert">
+                    <div className="advert__header">Bangkok</div>
+                    <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
+                    <div className="advert__details">
+                      <div>Book now till 25 Oct 2019</div>
+                      <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
+                    </div>
+                    <a href="c" className="advert__btn">
+                      Let's Go
+                      <div className="advert__icon"><Arrow className="brand-icon" /></div>
+                    </a>
+                  </div>
+                </div>
+                <div className="slider__buttons">
+                  <button className="slider__button -active">
+                    <div className="slider__button-caption">01</div>
+                    <div className="slider__button-icon"></div>
+                  </button>
+                  <button className="slider__button">
+                    <div className="slider__button-caption">02</div>
+                    <div className="slider__button-icon"></div>
+                  </button>
+                  <button className="slider__button">
+                    <div className="slider__button-caption">03</div>
+                    <div className="slider__button-icon"></div>
+                  </button>
+                </div>
+              </div>
+              <div className="search">
+                <div className="search__icon">
+                  <img src="/plane.png" alt="icon" />
+                </div>
+                <div className="search__filters">
+                  <div className="filter">
+                    <div className="filter__caption">Departure airport</div>
+                    <div className="filter__value">
+                      <div className="filter__selected-value">Mumbai (BOM)</div>
+                      <ArrowDown />
+                    </div>
+                  </div>
+                  <div className="filter">
+                    <div className="filter__caption">Arrival airport</div>
+                    <div className="filter__value">
+                      <div className="filter__selected-value">Aalborg (AAL)</div>
+                      <ArrowDown />
+                    </div>
+                  </div>
+                </div>
+                <button className="search__btn">Search</button>
               </div>
             </div>
-            <div className="filter">
-              <div className="filter__caption">Arrival airport</div>
-              <div className="filter__value">
-              <div className="filter__selected-value">Aalborg (AAL)</div>
-              <ArrowDown />
-            </div>
-            </div>
+
           </div>
-          <button className="search__btn">Search</button>
         </div>
       </div>
 

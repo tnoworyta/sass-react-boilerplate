@@ -18,10 +18,22 @@
     img
       max-width: $m-base * 2
 
+  &__items
+    display: none
+
 .navbar
   align-items: center
   display: flex
   font-size: $font-size-lg
   justify-content: space-between
   margin-bottom: $m-xxl * 2
-  padding: $m-lg
+  padding-top: $m-lg
+
++media-breakpoint-up(lg)
+  .menu
+    &__items
+      align-items: center
+      display: flex
+      font-size: $font-size-base
+      justify-content: space-between
+      min-height: $m-base * 2
