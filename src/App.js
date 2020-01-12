@@ -91,84 +91,92 @@ function App() {
       </div>
 
       <div className="secondary-content">
-        <div className="column-section">
-          <div className="column-section__column">
-            <h1 className="heading--secondary-branded">The Zabdos Experience</h1>
-            <div className="column-section__description">
-              Wheter it's your first flight or simply latest, we work to anticipate your every
-              need
-            </div>
-            <div className="column-section__links">
-              <a href="c" className="link-with-icon">
-              <div className="link-with-icon__icon"><PlayButton className="white-icon"/></div>
-                Watch the full video now!
-              </a>
-            </div>
-          </div>
-          <div className="column-section__column">
-            <div className="card">
-              <img src="/inside1.jpg" alt="inside" />
-              <div className="card__subcaption">Arrive inspired</div>
-              <div className="card__caption">Business Class</div>
-            </div>
-            <div className="card">
-              <img src="/inside2.jpg" alt="inside" />
-              <div className="card__subcaption">Expect the exceptional</div>
-              <div className="card__caption">Economy Class</div>
-            </div>
-          </div>
-          <div className="column-section__column">
-            <div className="card--visible-on-top">
-              <img src="/vr.jpg" alt="vr" />
-              <div className="card__subcaption">Award winning technology</div>
-              <div className="card__caption">Explore the Fleet in VR</div>
-            </div>
-          </div>
-        </div>
+        <div className="centered-container">
+          <div className="main-container">
+            <div className="indented-container">
 
-        <div className="section">
-          <h1 className="heading--primary-branded">Complement Your Journey</h1>
-          <div className="section__description">
-            Explore the additional services we offer to make your
-            <br />
-            journey even more memorable
-          </div>
-          <div className="gallery">
-            <div className="gallery__image">
-              <div className="gallery__thumb -active">
-                <img src="/plane.png" alt="icon" />
+              <div className="column-section">
+                <div className="column-section__column">
+                  <h1 className="heading--secondary-branded">The Zabdos Experience</h1>
+                  <div className="column-section__description">
+                    Wheter it's your first flight or simply latest, we work to anticipate your every
+                    need
+                  </div>
+                  <div className="column-section__links">
+                    <a href="c" className="link-with-icon">
+                    <div className="link-with-icon__icon"><PlayButton className="white-icon"/></div>
+                      Watch the full video now!
+                    </a>
+                  </div>
+                </div>
+                <div className="column-section__column">
+                  <div className="card">
+                    <img src="/inside1.jpg" alt="inside" />
+                    <div className="card__subcaption">Arrive inspired</div>
+                    <div className="card__caption">Business Class</div>
+                  </div>
+                  <div className="card">
+                    <img src="/inside2.jpg" alt="inside" />
+                    <div className="card__subcaption">Expect the exceptional</div>
+                    <div className="card__caption">Economy Class</div>
+                  </div>
+                </div>
+                <div className="column-section__column">
+                  <div className="card--visible-on-top">
+                    <img src="/vr.jpg" alt="vr" />
+                    <div className="card__subcaption">Award winning technology</div>
+                    <div className="card__caption">Explore the Fleet in VR</div>
+                  </div>
+                </div>
               </div>
-              <div className="gallery__thumb-caption">Manage booking</div>
-            </div>
-            <div className="gallery__image">
-              <div className="gallery__thumb">
-                <img src="/plane.png" alt="icon" />
+
+              <div className="section">
+                <h1 className="heading--primary-branded">Complement Your Journey</h1>
+                <div className="section__description">
+                  Explore the additional services we offer to make your
+                  <br />
+                  journey even more memorable
+                </div>
+                <div className="gallery">
+                  <div className="gallery__image">
+                    <div className="gallery__thumb -active">
+                      <img src="/plane.png" alt="icon" />
+                    </div>
+                    <div className="gallery__thumb-caption">Manage booking</div>
+                  </div>
+                  <div className="gallery__image">
+                    <div className="gallery__thumb">
+                      <img src="/plane.png" alt="icon" />
+                    </div>
+                    <div className="gallery__thumb-caption">Excess bagage</div>
+                  </div>
+                  <div className="gallery__image">
+                    <div className="gallery__thumb">
+                      <img src="/plane.png" alt="icon" />
+                    </div>
+                    <div className="gallery__thumb-caption">Paid lounge access</div>
+                  </div>
+                  <div className="gallery__image">
+                    <div className="gallery__thumb">
+                      <img src="/plane.png" alt="icon" />
+                    </div>
+                    <div className="gallery__thumb-caption">Oryx Airport Hotel</div>
+                  </div>
+                  <div className="gallery__image">
+                    <div className="gallery__thumb">
+                      <img src="/plane.png" alt="icon" />
+                    </div>
+                    <div className="gallery__thumb-caption">Al Maha Services</div>
+                  </div>
+                  <div className="gallery__image">
+                    <div className="gallery__thumb">
+                      <img src="/plane.png" alt="icon" />
+                    </div>
+                    <div className="gallery__thumb-caption">Car rentals</div>
+                  </div>
+                </div>
               </div>
-              <div className="gallery__thumb-caption">Excess bagage</div>
-            </div>
-            <div className="gallery__image">
-              <div className="gallery__thumb">
-                <img src="/plane.png" alt="icon" />
-              </div>
-              <div className="gallery__thumb-caption">Paid lounge access</div>
-            </div>
-            <div className="gallery__image">
-              <div className="gallery__thumb">
-                <img src="/plane.png" alt="icon" />
-              </div>
-              <div className="gallery__thumb-caption">Oryx Airport Hotel</div>
-            </div>
-            <div className="gallery__image">
-              <div className="gallery__thumb">
-                <img src="/plane.png" alt="icon" />
-              </div>
-              <div className="gallery__thumb-caption">Al Maha Services</div>
-            </div>
-            <div className="gallery__image">
-              <div className="gallery__thumb">
-                <img src="/plane.png" alt="icon" />
-              </div>
-              <div className="gallery__thumb-caption">Car rentals</div>
+
             </div>
           </div>
         </div>
