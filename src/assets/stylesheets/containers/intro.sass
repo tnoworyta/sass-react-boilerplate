@@ -64,6 +64,7 @@
     left: $m-xxl * 2
     right: $m-xxl * 2
     top: 0
+  position: relative
 
   &__button
     align-items: center
@@ -125,11 +126,8 @@
 
   &__header
     border-bottom: $m-xs/2 solid $color-white
+    bottom: 100%
     display: inline-block
     line-height: $line-height-xl
-    margin:
-      bottom: $m-xs/2 * -1
-      left: $m-xxl * 2
-    padding-bottom: $m-xs
-    position: relative
+    position: absolute
     text-transform: uppercase
