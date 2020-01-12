@@ -11,7 +11,7 @@
     flex-direction: column
     flex: 0 1 33%
     justify-content: center
-    padding: $m-lg
+    padding: $m-lg * 1.2
     img
       max-width: 25px
 
@@ -40,6 +40,9 @@
 
 +media-breakpoint-up(lg)
   .gallery
+
+    &__image
+      padding: $m-lg
 
     &__thumb
 
