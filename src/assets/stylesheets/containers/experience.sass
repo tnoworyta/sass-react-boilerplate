@@ -1,5 +1,6 @@
 .card
   background-color: $color-white
+  margin-top: $m-lg
 
   &__caption
     font:
@@ -8,6 +9,10 @@
     padding:
       bottom: $m-sm
       left: $m-sm
+
+  &__image
+    height: $m-xxl * 4
+    overflow: hidden
 
   &__subcaption
     border-bottom: $m-xs/4 solid $color-gray
@@ -41,22 +46,21 @@
   background-color: $brand-primary
   border-radius: $border-radius-sm
   border: $m-xs/8 solid $brand-primary
-  height: $m-sm
-  width: $m-xxl
+  height: $m-xs
+  width: $m-xxl * 1.5
 
 .heading
-  font-size: $font-size-xl * 2
+  font-size: $font-size-xl //* 2
 
-  &--primary-branded
-    @extend .heading
+  &.-primary-branded
+    text-align: center
     &::before
       @extend .divider
       content: ' '
       display: block
       margin: 0 auto $m-xl
 
-  &--secondary-branded
-    @extend .heading
+  &.-secondary-branded
     &::before
       @extend .divider
       content: ' '
@@ -91,6 +95,7 @@
 
 +media-breakpoint-up(lg)
   .card
+    margin-top: 0
 
     &.-visible-on-top
       box-shadow: -$m-lg $m-lg $m-xl rgba($brand-primary, 0.2)
@@ -100,6 +105,10 @@
       left: $m-xxl
       margin-top: $m-xl
       position: relative
+
+    &__image
+      height: auto
+      overflow: auto
 
   .column-section
     align-items: flex-start
@@ -111,3 +120,9 @@
 
       &:not(:last-child)
         margin-right: $m-lg
+
+  .divider
+    width: $m-xxl
+
+  .heading
+    font-size: $font-size-xl * 2

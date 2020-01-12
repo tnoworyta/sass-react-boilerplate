@@ -21,12 +21,9 @@
     box-shadow: 0 $m-base $m-base rgba($color-black, 0.2)
     padding: $m-lg
 
-    &.-active
-      background-color: $brand-primary
-      box-shadow: 0 $m-base $m-base rgba($brand-primary, 0.4)
-
   &__thumb-caption
     margin-top: $m-md
+    text-align: center
 
 .section
   align-items: center
@@ -40,3 +37,12 @@
     font-size: $font-size-xl
     margin-bottom: $m-xxl
     text-align: center
+
++media-breakpoint-up(lg)
+  .gallery
+
+    &__thumb
+
+      &.-active
+        background-color: $brand-primary
+        box-shadow: 0 $m-base $m-base rgba($brand-primary, 0.4)
