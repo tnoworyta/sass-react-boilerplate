@@ -31,7 +31,7 @@ function App() {
             </header>
 
             <div className="indented-container">
-              <div className="slider">
+              <article className="slider">
                 <div className="slider__header">Fly with us to</div>
                 <div className="slider__slideframe">
                   <div className="advert">
@@ -61,7 +61,7 @@ function App() {
                     <div className="slider__button-icon"></div>
                   </button>
                 </div>
-              </div>
+              </article>
               <div className="search">
                 <div className="search__icon">
                   <img src="/plane.png" alt="icon" />
@@ -95,7 +95,7 @@ function App() {
           <div className="main-container">
             <div className="indented-container">
 
-              <div className="column-section">
+              <article className="column-section">
                 <div className="column-section__column">
                   <h1 className="heading -secondary-branded">The Zabdos Experience</h1>
                   <div className="column-section__description">
@@ -110,35 +110,35 @@ function App() {
                   </div>
                 </div>
                 <div className="column-section__column">
-                  <div className="card">
+                  <section className="card">
                     <div className="card__image">
                       <img src="/inside1.jpg" alt="inside" />
                     </div>
                     <div className="card__subcaption">Arrive inspired</div>
-                    <div className="card__caption">Business Class</div>
-                  </div>
-                  <div className="card">
+                    <h2 className="card__caption">Business Class</h2>
+                  </section>
+                  <section className="card">
                     <div className="card__image">
                       <img src="/inside2.jpg" alt="inside" />
                     </div>
                     <div className="card__subcaption">Expect the exceptional</div>
-                    <div className="card__caption">Economy Class</div>
-                  </div>
+                    <h2 className="card__caption">Economy Class</h2>
+                  </section>
                 </div>
                 <div className="column-section__column">
-                  <div className="card -visible-on-top">
+                  <section className="card -visible-on-top">
                     <div className="card__image">
                       <img src="/vr.jpg" alt="vr" />
                     </div>
                     <div className="card__subcaption">Award winning technology</div>
-                    <div className="card__caption">Explore the Fleet in VR</div>
-                  </div>
+                    <h2 className="card__caption">Explore the Fleet in VR</h2>
+                  </section>
                 </div>
-              </div>
+              </article>
 
-              <div className="section">
+              <article className="listing">
                 <h1 className="heading -primary-branded">Complement Your Journey</h1>
-                <div className="section__description">
+                <div className="listing__description">
                   Explore the additional services we offer to make your
                   <br />
                   journey even more memorable
@@ -181,7 +181,7 @@ function App() {
                     <div className="gallery__thumb-caption">Car rentals</div>
                   </div>
                 </div>
-              </div>
+              </article>
 
             </div>
           </div>
