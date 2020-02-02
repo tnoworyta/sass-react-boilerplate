@@ -1,25 +1,40 @@
-.navbar
-  display: flex
-  justify-content: space-between
-  align-items: center
-  margin: $m-lg
-  font-size: $font-size-lg
-
 .menu
-  display: flex
-  justify-content: space-between
   align-items: center
-  min-height: $m-base * 2
+  display: flex
   font-size: $font-size-base
-  &__item
-    margin:
-      left: $m-base
-    text-decoration: none
-    img
-      max-width: $m-base * 2
+  justify-content: space-between
+  min-height: $m-base * 2
+
   &__avatar
     img
       border-radius: 50%
+
   &__btn
     @extend .btn
 
+  &__item
+    margin-left: $m-base
+    text-decoration: none
+    img
+      max-width: $m-base * 2
+
+  &__items
+    display: none
+
+.navbar
+  align-items: center
+  display: flex
+  font-size: $font-size-lg
+  justify-content: space-between
+  margin-bottom: $m-xxl * 2
+  padding-top: $m-lg
+
++media-breakpoint-up(lg)
+  .menu
+
+    &__items
+      align-items: center
+      display: flex
+      font-size: $font-size-base
+      justify-content: space-between
+      min-height: $m-base * 2
