@@ -19,11 +19,11 @@ function App() {
                   Check in
                 </a>
                 <a href="c" className="menu__item">
-                  <img src="/av.jpg" alt="avatar" className="menu__avatar" />
+                  <img src="/av.jpg" alt="avatar" className="menu__avatar -round" />
                 </a>
               </div>
               <a href="c" className="menu__item">
-                <img src="/h.jpg" alt="menu" />
+                <img src="/h.jpg" alt="menu" className="menu__avatar" />
               </a>
             </nav>
           </header>
