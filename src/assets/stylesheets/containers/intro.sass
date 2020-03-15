@@ -82,10 +82,25 @@ $border-width: 3px
     margin-left: $m-xs
     max-height: 30%
 
+    &::after
+      background-color: rgba($color-white, .4)
+      border-radius: 50%
+      content: ' '
+      height: $m-sm
+      width: $m-sm
+
     &.-active
       background-color: rgba($color-white, .7)
       border-top-color: $brand-selected
       position: relative
+
+      &::after
+        background-color: $brand-primary
+        border-radius: 50%
+        box-shadow: 0 $m-sm $m-sm $m-xs/1.5 $brand-primary
+        content: ' '
+        height: $m-sm
+        width: $m-sm
 
       &::before
         background-color: $brand-primary
@@ -98,13 +113,6 @@ $border-width: 3px
 
       .slider__button-caption
         color: black
-
-      .slider__button-icon
-        background-color: $brand-primary
-        border-radius: 50%
-        box-shadow: 0 $m-sm $m-sm $m-xs/1.5 $brand-primary
-        height: $m-sm
-        width: $m-sm
 
   &__buttons
     display: none

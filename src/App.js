@@ -50,15 +50,12 @@ function App() {
               <div className="slider__buttons">
                 <button className="slider__button -active">
                   <div className="slider__button-caption">01</div>
-                  <div className="slider__button-icon"></div>
                 </button>
                 <button className="slider__button">
                   <div className="slider__button-caption">02</div>
-                  <div className="slider__button-icon"></div>
                 </button>
                 <button className="slider__button">
                   <div className="slider__button-caption">03</div>
-                  <div className="slider__button-icon"></div>
                 </button>
               </div>
             </article>
