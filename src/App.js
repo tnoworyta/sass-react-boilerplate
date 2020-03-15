@@ -33,11 +33,11 @@ function App() {
               <div className="slider__header">Fly with us to</div>
               <div>
                 <div className="advert">
-                  <div className="advert__header">Bangkok</div>
-                  <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
+                  <h2 className="advert__header">Bangkok</h2>
+                  <h3 className="advert__subheader">A new door to paradise for just 1500 USD</h3>
                   <div className="advert__details">
-                    <div>Book now till 25 Oct 2019</div>
-                    <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
+                    <p>Book now till 25 Oct 2019</p>
+                    <p>Travel from 25 Oct 2019 to 25 Dec 2019</p>
                   </div>
                   <a href="c" className="advert__btn">
                     Let's Go
