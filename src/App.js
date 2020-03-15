@@ -88,99 +88,97 @@ function App() {
         </div>
       </div>
 
-      <div className="secondary-content">
-        <div className="centered-container">
-          <div className="indented-container">
-            <article className="column-section">
-              <div className="column-section__column">
-                <h1 className="heading -secondary-branded">The Zabdos Experience</h1>
-                <div className="column-section__description">
-                  Wheter it's your first flight or simply latest, we work to anticipate your every
-                  need
+      <div className="centered-container">
+        <div className="indented-container">
+          <article className="column-section">
+            <div className="column-section__column">
+              <h1 className="heading -secondary-branded">The Zabdos Experience</h1>
+              <div className="column-section__description">
+                Wheter it's your first flight or simply latest, we work to anticipate your every
+                need
+              </div>
+              <div>
+                <a href="c" className="link-with-icon">
+                  <div className="link-with-icon__icon">
+                    <PlayButton />
+                  </div>
+                  Watch the full video now!
+                </a>
+              </div>
+            </div>
+            <div className="column-section__column">
+              <section className="card">
+                <div className="card__image">
+                  <img src="/inside1.jpg" alt="inside" />
                 </div>
-                <div>
-                  <a href="c" className="link-with-icon">
-                    <div className="link-with-icon__icon">
-                      <PlayButton />
-                    </div>
-                    Watch the full video now!
-                  </a>
+                <p className="card__subcaption">Arrive inspired</p>
+                <h2 className="card__caption">Business Class</h2>
+              </section>
+              <section className="card">
+                <div className="card__image">
+                  <img src="/inside2.jpg" alt="inside" />
                 </div>
-              </div>
-              <div className="column-section__column">
-                <section className="card">
-                  <div className="card__image">
-                    <img src="/inside1.jpg" alt="inside" />
-                  </div>
-                  <p className="card__subcaption">Arrive inspired</p>
-                  <h2 className="card__caption">Business Class</h2>
-                </section>
-                <section className="card">
-                  <div className="card__image">
-                    <img src="/inside2.jpg" alt="inside" />
-                  </div>
-                  <p className="card__subcaption">Expect the exceptional</p>
-                  <h2 className="card__caption">Economy Class</h2>
-                </section>
-              </div>
-              <div className="column-section__column">
-                <section className="card -visible-on-top">
-                  <div className="card__image">
-                    <img src="/vr.jpg" alt="vr" />
-                  </div>
-                  <p className="card__subcaption">Award winning technology</p>
-                  <h2 className="card__caption">Explore the Fleet in VR</h2>
-                </section>
-              </div>
-            </article>
+                <p className="card__subcaption">Expect the exceptional</p>
+                <h2 className="card__caption">Economy Class</h2>
+              </section>
+            </div>
+            <div className="column-section__column">
+              <section className="card -visible-on-top">
+                <div className="card__image">
+                  <img src="/vr.jpg" alt="vr" />
+                </div>
+                <p className="card__subcaption">Award winning technology</p>
+                <h2 className="card__caption">Explore the Fleet in VR</h2>
+              </section>
+            </div>
+          </article>
 
-            <article className="listing">
-              <h1 className="heading -primary-branded">Complement Your Journey</h1>
-              <div className="listing__description">
-                Explore the additional services we offer to make your
-                <br />
-                journey even more memorable
+          <article className="listing">
+            <h1 className="heading -primary-branded">Complement Your Journey</h1>
+            <div className="listing__description">
+              Explore the additional services we offer to make your
+              <br />
+              journey even more memorable
+            </div>
+            <div className="gallery">
+              <div className="gallery__image">
+                <div className="gallery__thumb -active">
+                  <Arrow />
+                </div>
+                <p className="gallery__thumb-caption">Manage booking</p>
               </div>
-              <div className="gallery">
-                <div className="gallery__image">
-                  <div className="gallery__thumb -active">
-                    <Arrow />
-                  </div>
-                  <p className="gallery__thumb-caption">Manage booking</p>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <Arrow />
                 </div>
-                <div className="gallery__image">
-                  <div className="gallery__thumb">
-                    <Arrow />
-                  </div>
-                  <p className="gallery__thumb-caption">Excess bagage</p>
-                </div>
-                <div className="gallery__image">
-                  <div className="gallery__thumb">
-                    <Arrow />
-                  </div>
-                  <p className="gallery__thumb-caption">Paid lounge access</p>
-                </div>
-                <div className="gallery__image">
-                  <div className="gallery__thumb">
-                    <Arrow />
-                  </div>
-                  <p className="gallery__thumb-caption">Oryx Airport Hotel</p>
-                </div>
-                <div className="gallery__image">
-                  <div className="gallery__thumb">
-                    <Arrow />
-                  </div>
-                  <p className="gallery__thumb-caption">Al Maha Services</p>
-                </div>
-                <div className="gallery__image">
-                  <div className="gallery__thumb">
-                    <Arrow />
-                  </div>
-                  <p className="gallery__thumb-caption">Car rentals</p>
-                </div>
+                <p className="gallery__thumb-caption">Excess bagage</p>
               </div>
-            </article>
-          </div>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <Arrow />
+                </div>
+                <p className="gallery__thumb-caption">Paid lounge access</p>
+              </div>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <Arrow />
+                </div>
+                <p className="gallery__thumb-caption">Oryx Airport Hotel</p>
+              </div>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <Arrow />
+                </div>
+                <p className="gallery__thumb-caption">Al Maha Services</p>
+              </div>
+              <div className="gallery__image">
+                <div className="gallery__thumb">
+                  <Arrow />
+                </div>
+                <p className="gallery__thumb-caption">Car rentals</p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </Fragment>
