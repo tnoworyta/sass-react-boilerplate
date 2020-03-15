@@ -144,39 +144,39 @@ function App() {
               <div className="gallery">
                 <div className="gallery__image">
                   <div className="gallery__thumb -active">
-                    <img src="/plane.png" alt="icon" />
+                    <Arrow />
                   </div>
-                  <div className="gallery__thumb-caption">Manage booking</div>
+                  <p className="gallery__thumb-caption">Manage booking</p>
                 </div>
                 <div className="gallery__image">
                   <div className="gallery__thumb">
-                    <img src="/plane.png" alt="icon" />
+                    <Arrow />
                   </div>
-                  <div className="gallery__thumb-caption">Excess bagage</div>
+                  <p className="gallery__thumb-caption">Excess bagage</p>
                 </div>
                 <div className="gallery__image">
                   <div className="gallery__thumb">
-                    <img src="/plane.png" alt="icon" />
+                    <Arrow />
                   </div>
-                  <div className="gallery__thumb-caption">Paid lounge access</div>
+                  <p className="gallery__thumb-caption">Paid lounge access</p>
                 </div>
                 <div className="gallery__image">
                   <div className="gallery__thumb">
-                    <img src="/plane.png" alt="icon" />
+                    <Arrow />
                   </div>
-                  <div className="gallery__thumb-caption">Oryx Airport Hotel</div>
+                  <p className="gallery__thumb-caption">Oryx Airport Hotel</p>
                 </div>
                 <div className="gallery__image">
                   <div className="gallery__thumb">
-                    <img src="/plane.png" alt="icon" />
+                    <Arrow />
                   </div>
-                  <div className="gallery__thumb-caption">Al Maha Services</div>
+                  <p className="gallery__thumb-caption">Al Maha Services</p>
                 </div>
                 <div className="gallery__image">
                   <div className="gallery__thumb">
-                    <img src="/plane.png" alt="icon" />
+                    <Arrow />
                   </div>
-                  <div className="gallery__thumb-caption">Car rentals</div>
+                  <p className="gallery__thumb-caption">Car rentals</p>
                 </div>
               </div>
             </article>

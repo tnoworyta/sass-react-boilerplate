@@ -12,14 +12,15 @@
     flex: 0 1 33%
     justify-content: center
     padding: $m-lg * 1.2
-    img
-      max-width: 25px
 
   &__thumb
     background-color: $color-white
     border-radius: 50%
     box-shadow: 0 $m-base $m-base rgba($color-black, .2)
     padding: $m-lg
+
+    svg
+      fill: $brand-primary
 
   &__thumb-caption
     margin-top: $m-md
@@ -49,3 +50,6 @@
       &.-active
         background-color: $brand-primary
         box-shadow: 0 $m-base $m-base rgba($brand-primary, .4)
+
+        svg
+          fill: $color-white
