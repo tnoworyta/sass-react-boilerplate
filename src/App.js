@@ -18,8 +18,8 @@ function App() {
                 <a href="c" className="menu__item menu__btn">
                   Check in
                 </a>
-                <a href="c" className="menu__item menu__avatar">
-                  <img src="/av.jpg" alt="avatar" />
+                <a href="c" className="menu__item">
+                  <img src="/av.jpg" alt="avatar" className="menu__avatar" />
                 </a>
               </div>
               <a href="c" className="menu__item">
