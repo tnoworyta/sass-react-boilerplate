@@ -3,10 +3,10 @@
   display: flex
   font-size: $font-size-base
   justify-content: space-between
-  min-height: $m-base * 2
 
   &__avatar
-    img
+    max-width: $m-base * 2
+    &.-round
       border-radius: 50%
 
   &__btn
@@ -15,8 +15,6 @@
   &__item
     margin-left: $m-base
     text-decoration: none
-    img
-      max-width: $m-base * 2
 
   &__items
     display: none
@@ -37,4 +35,3 @@
       display: flex
       font-size: $font-size-base
       justify-content: space-between
-      min-height: $m-base * 2

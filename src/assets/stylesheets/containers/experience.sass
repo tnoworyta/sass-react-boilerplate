@@ -1,3 +1,10 @@
+@mixin header-divider
+  background-color: $brand-primary
+  border-radius: $border-radius-sm
+  border: $m-xs/8 solid $brand-primary
+  height: $m-xs
+  width: $m-xxl * 1.5
+
 .card
   background-color: $color-white
   margin-top: $m-lg
@@ -6,11 +13,8 @@
     font:
       size: $font-size-xl
       weight: $font-weight-bold
-    margin:
-      block-start: 0
-      block-end: 0
+    margin-bottom: $m-sm
     padding:
-      bottom: $m-sm
       left: $m-sm
 
   &__image
@@ -27,6 +31,7 @@
     text-transform: uppercase
 
 .column-section
+  color: $color-black
   display: flex
   flex-direction: column
 
@@ -37,35 +42,28 @@
     justify-content: center
 
   &__description
-    border-bottom: 1px solid rgba($color-gray, 0.3)
-    color: rgba($color-gray, 0.5)
+    border-bottom: 1px solid rgba($color-gray, .3)
+    color: rgba($color-gray, .5)
     font-size: $font-size-xl
     margin:
       bottom: $m-xl
       top: $m-md
     padding-bottom: $m-xl
 
-.divider
-  background-color: $brand-primary
-  border-radius: $border-radius-sm
-  border: $m-xs/8 solid $brand-primary
-  height: $m-xs
-  width: $m-xxl * 1.5
-
 .heading
-  font-size: $font-size-xl //* 2
+  font-size: $font-size-xl
 
   &.-primary-branded
     text-align: center
     &::before
-      @extend .divider
+      @include header-divider
       content: ' '
       display: block
       margin: 0 auto $m-xl
 
   &.-secondary-branded
     &::before
-      @extend .divider
+      @include header-divider
       content: ' '
       display: block
       margin:
@@ -73,15 +71,18 @@
         top: $m-xl
 
 .link-with-icon
-  color: rgba($color-gray, 0.5)
+  color: rgba($color-gray, .5)
   display: inline-block
-  font-size: $font-size-base * 1.1
+  font-size: $font-size-lg
   left: $m-xxl + $m-sm
   padding:
     bottom: $m-sm
     top: $m-sm
   position: relative
   text-decoration: none
+
+  svg
+    fill: $color-white
 
   &__icon
     align-items: center
@@ -101,10 +102,10 @@
     margin-top: 0
 
     &.-visible-on-top
-      box-shadow: -$m-lg $m-lg $m-xl rgba($brand-primary, 0.2)
+      box-shadow: -$m-lg $m-lg $m-xl rgba($brand-primary, .2)
       position: relative
 
-    &:last-child:nth-child(n+2)
+    &:nth-child(2n)
       left: $m-xxl
       margin-top: $m-xl
       position: relative
@@ -129,3 +130,11 @@
 
   .heading
     font-size: $font-size-xl * 2
+
+    &.-primary-branded
+      &::before
+        width: $m-xxl
+
+    &.-secondary-branded
+      &::before
+        width: $m-xxl

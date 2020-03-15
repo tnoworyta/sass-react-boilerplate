@@ -1,14 +1,16 @@
+$border-width: 3px
+
 .advert
 
   &__btn
-    background-color: rgba($color-white, 0.4)
-    display: inline-block
+    align-items: center
+    background-color: rgba($color-white, .4)
+    display: inline-flex
     font:
       size: $font-size-base
       weight: $font-weight-bold
     margin-top: $m-xxl
-    padding: $m-md $m-xl
-    position: relative
+    padding-left: $m-xl
     text-align: center
     text-decoration: none
 
@@ -23,8 +25,7 @@
 
   &__header
     font:
-      size: $font-size-xxl / 2
-      weight: $font-weight-bold
+      size: $font-size-xxl / 2.5
     line-height: $line-height-sm
 
   &__icon
@@ -33,36 +34,32 @@
     color: $brand-primary
     display: block
     font-size: $font-size-lg
-    left: 100%
+    margin-left: $m-xl
     padding: $m-md
-    position: absolute
-    top: 0
+
+    svg
+      fill: $brand-primary
 
   &__subheader
     color: $color-white
     font:
       size: $font-size-xl
-      weight: $font-weight-bold
     margin-top: $m-xl
 
-.main-container
-  margin:
+.centered-container
+  padding:
     left: $m-lg
     right: $m-lg
 
 .primary-content
   background:
     color: $color-black
-    image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), $color-gray-light), url('/b.jpg')
+    image: linear-gradient(to bottom, rgba($color-white, 0) 60%, $color-gray-light), url("/b.jpg")
   margin-bottom: $m-xl
   padding-bottom: $m-xl
 
-.secondary-content
-  background-color: $color-gray-light
-  color: $color-black
-
 .slider
-  border-top: $m-xs/2 solid rgba($color-white, 0.5)
+  border-top: $border-width solid rgba($color-white, .5)
   display: flex
   justify-content: space-between
   margin-bottom: $m-xxl * 2
@@ -70,13 +67,13 @@
 
   &__button
     align-items: center
-    background-color: rgba($color-white, 0.4)
+    background-color: rgba($color-white, .4)
     border:
       bottom: 0
       left: 0
       right: 0
-      top: $m-xs/2 solid rgba($color-white, 0.5)
-    color: rgba($color-white, 0.5)
+      top: $border-width solid rgba($color-white, .5)
+    color: rgba($color-white, .5)
     display: flex
     flex-direction: column
     flex: 0 1 33%
@@ -85,28 +82,37 @@
     margin-left: $m-xs
     max-height: 30%
 
+    &::after
+      background-color: rgba($color-white, .4)
+      border-radius: 50%
+      content: ' '
+      height: $m-sm
+      width: $m-sm
+
     &.-active
-      background-color: rgba($color-white, 0.7)
-      border-top: $m-xs/2 solid $brand-selected
+      background-color: rgba($color-white, .7)
+      border-top-color: $brand-selected
+      position: relative
+
+      &::after
+        background-color: $brand-primary
+        border-radius: 50%
+        box-shadow: 0 $m-sm $m-sm $m-xs/1.5 $brand-primary
+        content: ' '
+        height: $m-sm
+        width: $m-sm
 
       &::before
         background-color: $brand-primary
+        bottom: 100%
         content: ' '
-        height: $m-xs/2
-        left: -11px
-        position: relative
-        top: -18px
+        height: $border-width
+        left: 0
+        position: absolute
         width: $m-base
 
       .slider__button-caption
         color: black
-
-      .slider__button-icon
-        background-color: $brand-primary
-        border-radius: 50%
-        box-shadow: 0 $m-sm $m-sm $m-xs/1.5 $brand-primary
-        height: $m-sm
-        width: $m-sm
 
   &__buttons
     display: none
@@ -117,13 +123,13 @@
       top: $m-lg
 
   &__button-icon
-    background-color: rgba($color-white, 0.4)
+    background-color: rgba($color-white, .4)
     border-radius: 50%
     height: $m-sm
     width: $m-sm
 
   &__header
-    border-bottom: $m-xs/2 solid $color-white
+    border-bottom: $border-width solid $color-white
     bottom: 100%
     display: inline-block
     line-height: $line-height-xl
