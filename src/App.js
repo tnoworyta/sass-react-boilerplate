@@ -101,7 +101,7 @@ function App() {
                 <div className="column-section__links">
                   <a href="c" className="link-with-icon">
                     <div className="link-with-icon__icon">
-                      <PlayButton className="white-icon" />
+                      <PlayButton />
                     </div>
                     Watch the full video now!
                   </a>
