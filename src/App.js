@@ -31,7 +31,7 @@ function App() {
           <div className="indented-container">
             <article className="slider">
               <div className="slider__header">Fly with us to</div>
-              <div className="slider__slideframe">
+              <div>
                 <div className="advert">
                   <div className="advert__header">Bangkok</div>
                   <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
