@@ -1,19 +1,18 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { ReactComponent as Arrow } from './assets/images/icons/arrow.svg'
 import { ReactComponent as PlayButton } from './assets/images/icons/play.svg'
 import { ReactComponent as ArrowDown } from './assets/images/icons/arrow-down.svg'
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <div className="primary-content">
         <div className="centered-container">
           <div className="main-container">
-
             <header className="navbar">
               <strong>Zabdos</strong>
               <nav className="menu">
-                  <div className="menu__items">
+                <div className="menu__items">
                   <a href="f" className="menu__item">
                     Flight Statuses
                   </a>
@@ -36,14 +35,18 @@ function App() {
                 <div className="slider__slideframe">
                   <div className="advert">
                     <div className="advert__header">Bangkok</div>
-                    <div className="advert__subheader">A new door to paradise for just 1500 USD</div>
+                    <div className="advert__subheader">
+                      A new door to paradise for just 1500 USD
+                    </div>
                     <div className="advert__details">
                       <div>Book now till 25 Oct 2019</div>
                       <div>Travel from 25 Oct 2019 to 25 Dec 2019</div>
                     </div>
                     <a href="c" className="advert__btn">
                       Let's Go
-                      <div className="advert__icon"><Arrow className="brand-icon" /></div>
+                      <div className="advert__icon">
+                        <Arrow className="brand-icon" />
+                      </div>
                     </a>
                   </div>
                 </div>
@@ -85,7 +88,6 @@ function App() {
                 <button className="search__btn">Search</button>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -94,7 +96,6 @@ function App() {
         <div className="centered-container">
           <div className="main-container">
             <div className="indented-container">
-
               <article className="column-section">
                 <div className="column-section__column">
                   <h1 className="heading -secondary-branded">The Zabdos Experience</h1>
@@ -104,7 +105,9 @@ function App() {
                   </div>
                   <div className="column-section__links">
                     <a href="c" className="link-with-icon">
-                    <div className="link-with-icon__icon"><PlayButton className="white-icon"/></div>
+                      <div className="link-with-icon__icon">
+                        <PlayButton className="white-icon" />
+                      </div>
                       Watch the full video now!
                     </a>
                   </div>
@@ -182,12 +185,11 @@ function App() {
                   </div>
                 </div>
               </article>
-
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Fragment>
   )
 }
 
