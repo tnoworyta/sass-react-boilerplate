@@ -42,7 +42,7 @@ function App() {
                   <a href="c" className="advert__btn">
                     Let's Go
                     <div className="advert__icon">
-                      <Arrow className="brand-icon" />
+                      <Arrow />
                     </div>
                   </a>
                 </div>
