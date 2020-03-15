@@ -98,7 +98,7 @@ function App() {
                   Wheter it's your first flight or simply latest, we work to anticipate your every
                   need
                 </div>
-                <div className="column-section__links">
+                <div>
                   <a href="c" className="link-with-icon">
                     <div className="link-with-icon__icon">
                       <PlayButton />
@@ -112,14 +112,14 @@ function App() {
                   <div className="card__image">
                     <img src="/inside1.jpg" alt="inside" />
                   </div>
-                  <div className="card__subcaption">Arrive inspired</div>
+                  <p className="card__subcaption">Arrive inspired</p>
                   <h2 className="card__caption">Business Class</h2>
                 </section>
                 <section className="card">
                   <div className="card__image">
                     <img src="/inside2.jpg" alt="inside" />
                   </div>
-                  <div className="card__subcaption">Expect the exceptional</div>
+                  <p className="card__subcaption">Expect the exceptional</p>
                   <h2 className="card__caption">Economy Class</h2>
                 </section>
               </div>
@@ -128,7 +128,7 @@ function App() {
                   <div className="card__image">
                     <img src="/vr.jpg" alt="vr" />
                   </div>
-                  <div className="card__subcaption">Award winning technology</div>
+                  <p className="card__subcaption">Award winning technology</p>
                   <h2 className="card__caption">Explore the Fleet in VR</h2>
                 </section>
               </div>
