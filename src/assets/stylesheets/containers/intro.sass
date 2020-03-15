@@ -3,14 +3,14 @@ $border-width: 3px
 .advert
 
   &__btn
+    align-items: center
     background-color: rgba($color-white, 0.4)
-    display: inline-block
+    display: inline-flex
     font:
       size: $font-size-base
       weight: $font-weight-bold
     margin-top: $m-xxl
-    padding: $m-md $m-xl
-    position: relative
+    padding-left: $m-xl
     text-align: center
     text-decoration: none
 
@@ -34,10 +34,8 @@ $border-width: 3px
     color: $brand-primary
     display: block
     font-size: $font-size-lg
-    left: 100%
+    margin-left: $m-xl
     padding: $m-md
-    position: absolute
-    top: 0
 
   &__subheader
     color: $color-white
