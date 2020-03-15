@@ -86,14 +86,15 @@
     &.-active
       background-color: rgba($color-white, 0.7)
       border-top: $m-xs/2 solid $brand-selected
+      position: relative
 
       &::before
         background-color: $brand-primary
         content: ' '
         height: $m-xs/2
-        left: -11px
-        position: relative
-        top: -18px
+        bottom: 100%
+        left: 0
+        position: absolute
         width: $m-base
 
       .slider__button-caption
