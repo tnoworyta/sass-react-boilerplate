@@ -1,3 +1,10 @@
+@mixin header-divider
+  background-color: $brand-primary
+  border-radius: $border-radius-sm
+  border: $m-xs/8 solid $brand-primary
+  height: $m-xs
+  width: $m-xxl * 1.5
+
 .card
   background-color: $color-white
   margin-top: $m-lg
@@ -43,27 +50,20 @@
       top: $m-md
     padding-bottom: $m-xl
 
-.divider
-  background-color: $brand-primary
-  border-radius: $border-radius-sm
-  border: $m-xs/8 solid $brand-primary
-  height: $m-xs
-  width: $m-xxl * 1.5
-
 .heading
   font-size: $font-size-xl
 
   &.-primary-branded
     text-align: center
     &::before
-      @extend .divider
+      @include header-divider
       content: ' '
       display: block
       margin: 0 auto $m-xl
 
   &.-secondary-branded
     &::before
-      @extend .divider
+      @include header-divider
       content: ' '
       display: block
       margin:
@@ -130,3 +130,11 @@
 
   .heading
     font-size: $font-size-xl * 2
+
+    &.-primary-branded
+      &::before
+        width: $m-xxl
+
+    &.-secondary-branded
+      &::before
+        width: $m-xxl
