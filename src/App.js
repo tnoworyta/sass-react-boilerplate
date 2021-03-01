@@ -106,14 +106,14 @@ function App() {
             <div className="column-section__column">
               <section className="card">
                 <div className="card__image">
-                  <img src="/inside1.jpg" alt="inside" />
+                  <img src="/inside1.jpg" loading="lazy" alt="inside" />
                 </div>
                 <p className="card__subcaption">Arrive inspired</p>
                 <h2 className="card__caption">Business Class</h2>
               </section>
               <section className="card">
                 <div className="card__image">
-                  <img src="/inside2.jpg" alt="inside" />
+                  <img src="/inside2.jpg" loading="lazy" alt="inside" />
                 </div>
                 <p className="card__subcaption">Expect the exceptional</p>
                 <h2 className="card__caption">Economy Class</h2>
@@ -122,7 +122,7 @@ function App() {
             <div className="column-section__column">
               <section className="card -visible-on-top">
                 <div className="card__image">
-                  <img src="/vr.jpg" alt="vr" />
+                  <img src="/vr.jpg" loading="lazy" alt="vr" />
                 </div>
                 <p className="card__subcaption">Award winning technology</p>
                 <h2 className="card__caption">Explore the Fleet in VR</h2>
